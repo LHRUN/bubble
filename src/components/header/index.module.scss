@@ -1,0 +1,53 @@
+.container {
+  .title {
+    position: relative;
+    margin-top: 50px;
+    .titleText {
+      font-size: 140px;
+      line-height: 130px;
+      color: transparent;
+      text-align: left;
+      background-image: linear-gradient(to right, #2C3333, #395B64, #A5C9CA);
+      -webkit-background-clip: text;
+    }
+  }
+
+  .subTitle {
+    position: relative;
+
+    .subTitleText {
+      text-align: right;
+    }
+
+    .subTitleIcon {
+      position: absolute;
+      top: 0em;
+      right: -1em;
+      z-index: 2;
+      padding: 1px 8px;
+      font-size: 24px;
+      color: #662549;
+      cursor: pointer;
+      background-color: #DE8F5F;
+      border-radius: 11px;
+      transition: all 1s;
+      transform: rotateY(0deg) rotate(15deg);
+
+      &:hover{
+        transform: rotateY(180deg) rotate(15deg);
+      }
+    }
+  }
+
+  .desc {
+    margin-left: 6px;
+    // margin-top: 20px;
+    font-size: 40px;
+    color: transparent;
+    text-align: left;
+    background-image: linear-gradient(to right, #A5C9CA, #395B64, #2C3333);
+    -webkit-background-clip: text;
+    transform: rotate(2deg);
+  }
+}
+

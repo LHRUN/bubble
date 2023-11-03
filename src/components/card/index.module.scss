@@ -1,0 +1,32 @@
+.card {
+  width: 100%;
+  padding: 20px;
+  cursor: pointer;
+  background-color: #A5C9CA;
+  border: solid 1px #9BBEC8;
+  border-radius: 20px;
+
+  &:hover {
+    box-shadow: 0px 0px 6px 0px #9BBEC8;
+  }
+
+  .image {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 5/4;
+    background-color: #395B64;
+    border-radius: 10px;
+  }
+  .name {
+
+    width: 100%;
+    margin-top: 20px;
+    overflow: hidden;
+    font-size: 20px;
+    line-height: 25px;
+    color: #395B64;
+    text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}

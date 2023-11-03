@@ -1,0 +1,23 @@
+.container {
+  display: flex;
+
+  .item {
+    min-width: 75px;
+    height: 40px;
+    padding: 0px 10px;
+    margin-right: 10px;
+    font-size: 20px;
+    line-height: 40px;
+    color: #395B64;
+    text-align: center;
+    cursor: pointer;
+    background-color: #A5C9CA;
+    border: solid 3px #395B64;
+    border-radius: 20px;
+
+    &_activity {
+      color: #2C3333;
+      border-color: #E7F6F2;
+    }
+  }
+}

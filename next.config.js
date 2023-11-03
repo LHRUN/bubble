@@ -1,4 +1,14 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {}
+// eslint-disable-next-line @typescript-eslint/no-var-requires
+const path = require('path');
 
-module.exports = nextConfig
+const nextConfig = {
+  sassOptions: {
+    includePaths: [path.join(__dirname, 'styles')]
+  },
+  images: {
+    dangerouslyAllowSVG: true
+  }
+};
+
+exports.exports = nextConfig;

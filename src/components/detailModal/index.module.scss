@@ -1,0 +1,94 @@
+.body {
+  display: flex;
+  min-width: 50vw;
+  max-width: 70vw;
+  min-height: 30vh;
+  max-height: 70vh;
+  padding: 40px 30px;
+  overflow-y: auto;
+  color: #E7F6F2;
+  background-color: #395B64;
+  border-radius: 20px;
+
+  .left {
+    width: 50%;
+    height: 100%;
+    padding-right: 20px;
+    overflow-y: auto;
+    border-right: solid 2px #2C3333;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    .github {
+      display: flex;
+      margin-bottom: 15px;
+
+      .githubTitle {
+        margin-right: 12px;
+        font-size: 22px;
+        line-height: 20px;
+      }
+
+      .githubText {
+        line-height: 18px;
+        color: #E7F6F2;
+        text-decoration: underline;
+        cursor: pointer;
+
+        &:hover {
+          color: #A5C9CA;
+        }
+      }
+    }
+
+    .desc {
+      padding: 15px 15px;
+      background-color: #2C3333;
+      border-radius: 15px;
+
+      .descItem {
+
+        &:not(:last-child) {
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+  .right {
+    width: 50%;
+    height: 100%;
+    padding-left: 20px;
+    overflow-y: auto;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    .example {
+
+      .exampleTitle {
+        margin-bottom: 15px;
+        font-size: 22px;
+        line-height: 20px;
+      }
+      .exampleText {
+        padding: 15px 15px;
+        word-break: break-all;
+        white-space: pre-wrap;
+        background-color: #2C3333;
+        border-radius: 15px;
+      }
+    }
+
+    .preview {
+      width: 100%;
+      height: 100%;
+      aspect-ratio: 5/4;
+      margin-top: 15px;
+      background-color: #E7F6F2;
+      border-radius: 15px;
+    }
+  }
+}
