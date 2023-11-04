@@ -4,6 +4,8 @@ import { ACTION_TYPE } from '@/context/list/reducer';
 import styles from './index.module.scss';
 import { useMemo } from 'react';
 import Image from 'next/image';
+import classNames from 'classnames';
+import { PoppinsFont } from '@/common/font';
 
 const DetailModal = () => {
   const { data, dispatch } = useList();
@@ -18,6 +20,7 @@ const DetailModal = () => {
   return (
     <Modal visible={data.visible} changeVisible={changeVisible}>
       <div className={styles.body}>
+        <div className={styles.background}></div>
         <div className={styles.left}>
           <div className={styles.github}>
             <div className={styles.githubTitle}>Github</div>
@@ -29,7 +32,7 @@ const DetailModal = () => {
               {detail?.github}
             </a>
           </div>
-          <div className={styles.desc}>
+          <div className={classNames(styles.desc, PoppinsFont.className)}>
             {detail?.descript.map((item, index) => (
               <div className={styles.descItem} key={index}>
                 {item}
@@ -38,23 +41,33 @@ const DetailModal = () => {
           </div>
         </div>
         <div className={styles.right}>
-          <div className={styles.example}>
-            <div className={styles.exampleTitle}>Example</div>
-            <div className={styles.exampleText}>
-              {detail?.example.map((item, index) => {
-                return (
-                  <div className={styles.exampleTextLine} key={index}>
-                    {item}
-                  </div>
-                );
-              })}
+          {detail?.example.length ? (
+            <div className={styles.example}>
+              <div className={styles.exampleTitle}>Example</div>
+              <div
+                className={classNames(
+                  styles.exampleText,
+                  PoppinsFont.className
+                )}
+              >
+                {detail?.example}
+              </div>
             </div>
+          ) : null}
+          <div className={styles.preview}>
+            {detail?.previewComponent ? (
+              detail.previewComponent()
+            ) : (
+              <Image
+                className={styles.previewImage}
+                src={detail?.previewImage ?? ''}
+                alt={detail?.name ?? ''}
+                width={300}
+                height={240}
+                loading="lazy"
+              />
+            )}
           </div>
-          <Image
-            className={styles.preview}
-            src={detail?.preview ?? ''}
-            alt={detail?.name ?? ''}
-          />
         </div>
       </div>
     </Modal>

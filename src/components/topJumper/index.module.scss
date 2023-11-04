@@ -1,0 +1,13 @@
+.box {
+  position: fixed;
+  right: 30px;
+  bottom: 100px;
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+
+  .image {
+    width: 100%;
+    height: 100%;
+  }
+}

@@ -1,0 +1,25 @@
+
+            <svg width="854" height="300" viewBox="0 0 854 300" xmlns="http://www.w3.org/2000/svg">
+                <style>
+                            .text {
+						font-size: 90px;
+						font-weight: 700;
+						font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;
+					}
+					.desc {
+						font-size: 20px;
+						font-weight: 500;
+						font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;
+					}
+                            
+                        </style>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 854 300">
+                    
+                                
+                                <path fill="#364765"  fill-opacity="1" d="m 0 0 T 0 250 Q 110 125 220 235 T 440 240 T 660 230 T 880 255 T 880 0 z"></path>
+                </svg>
+                
+                        <text text-anchor="middle" alignment-baseline="middle" x="50%" y="50%" class="text" style="fill:#FAF7F5;" stroke="#none" stroke-width="1" >capsule render</text>
+                 
+            </svg>
+        

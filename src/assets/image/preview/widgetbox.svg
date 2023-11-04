@@ -1,0 +1,120 @@
+
+    <svg width="812" height="359" viewBox="0 0 812 359"
+    xmlns="http://www.w3.org/2000/svg">
+        <defs>
+                <filter id="card" x="0" y="0" width="812" height="359" filterUnits="userSpaceOnUse">
+                    <feOffset dy="3" input="SourceAlpha"/>
+                    <feGaussianBlur stdDeviation="5" result="blur"/>
+                    <feFlood flood-opacity="0.161"/>
+                    <feComposite operator="in" in2="blur"/>
+                    <feComposite in="SourceGraphic"/>
+                </filter>
+            </defs>
+            <g id="card" transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#card)">
+                <rect id="card" data-name="card" width="782" height="329" rx="30" transform="translate(15 12)" fill="#FFFFFF"/>
+            </g>
+        <g id="header-text" transform="translate(60 60)">
+            <text id="skills" fill="#000000" transform="translate(0 44)" font-size="42" font-family="Roboto-Medium, Roboto, sans-serif" font-weight="500">
+                <tspan x="0" y="0">Skills</tspan>
+            </text>
+            <text style="display:none" id="languages" transform="translate(0 90)" fill="#bfbfbf" font-size="24" font-family="Roboto-Regular, Roboto, sans-serif">
+                <tspan x="0" y="0">Languages</tspan>
+            </text>
+            <text style="display:block" id="frameworks" transform="translate(0 90)" fill="#bfbfbf" font-size="24" font-family="Roboto-Regular, Roboto, sans-serif">
+                <tspan x="0" y="0">Frameworks</tspan>
+            </text>
+            <text style="display:none" id="libraries" transform="translate(0 264)" fill="#bfbfbf" font-size="24" font-family="Roboto-Regular, Roboto, sans-serif">
+                <tspan x="0" y="0">Libraries</tspan>
+            </text>
+            <text style="display:none" id="tools" transform="translate(0 264)" fill="#bfbfbf" font-size="24" font-family="Roboto-Regular, Roboto, sans-serif">
+                <tspan x="0" y="0">Tools</tspan>
+            </text>
+            <text style="display:none" id="software" transform="translate(0 264)" fill="#bfbfbf" font-size="24" font-family="Roboto-Regular, Roboto, sans-serif">
+                <tspan x="0" y="0">Software</tspan>
+            </text>
+        </g>
+        <g style="display:none" id="boxes" transform="translate(60 190)">
+            <defs>
+                <linearGradient id="linear-gradient1" x1="0.085" y1="0.941" x2="0.939" y2="0.123" gradientUnits="objectBoundingBox">
+                    <stop offset="0" stop-color="#FFFFFF"/>
+                    <stop offset="1" stop-color="#808080"/>
+                </linearGradient>
+            </defs>
+            <rect id="gradient-box1" transform="translate(0 0)" data-name="gradient-box1" width="80" height="80" rx="20" fill="url(#linear-gradient1)"/>
+<g transform="translate(40.5 40.5)">undefined</g>
+        </g>
+        <g style="display:block" id="boxes" transform="translate(60 190)">
+            <defs>
+                <linearGradient id="linear-gradient2" x1="0.085" y1="0.941" x2="0.939" y2="0.123" gradientUnits="objectBoundingBox">
+                    <stop offset="0" stop-color="#A9EEFF"/>
+                    <stop offset="1" stop-color="#00ACD2"/>
+                </linearGradient>
+            </defs>
+            <rect id="gradient-box2" transform="translate(0 0)" data-name="gradient-box2" width="80" height="80" rx="20" fill="url(#linear-gradient2)"/>
+<g transform="translate(22 24.249000000000002)"><svg xmlns="http://www.w3.org/2000/svg" width="36" height="31.502" viewBox="0 0 36 31.502">
+        <path id="react-logo" data-name="react-logo" d="M29.4,12.459q-.57-.19-1.139-.359c.063-.26.12-.52.176-.78.865-4.191.3-7.559-1.624-8.67-1.849-1.062-4.866.042-7.917,2.7-.3.26-.6.534-.879.809-.19-.183-.387-.366-.584-.541-3.2-2.841-6.405-4.036-8.325-2.918C7.27,3.769,6.722,6.94,7.5,10.905c.077.394.162.78.26,1.174-.45.127-.893.267-1.308.415C2.693,13.8,0,15.848,0,17.972c0,2.194,2.869,4.395,6.771,5.73.316.105.633.211.956.3-.105.422-.2.837-.281,1.266-.738,3.9-.162,7,1.68,8.058,1.9,1.1,5.091-.028,8.2-2.749.246-.218.492-.443.738-.682.309.3.633.591.956.872C22.029,33.356,25,34.4,26.838,33.342c1.9-1.1,2.517-4.423,1.716-8.473q-.095-.464-.211-.949c.225-.063.443-.134.661-.2,4.057-1.343,7-3.516,7-5.745,0-2.13-2.77-4.2-6.6-5.512ZM19.891,6.49c2.616-2.278,5.055-3.171,6.166-2.531,1.188.682,1.645,3.438.9,7.059-.049.239-.1.471-.162.7a35.995,35.995,0,0,0-4.732-.745,35.525,35.525,0,0,0-3-3.734c.274-.26.541-.506.823-.752ZM11.756,21.621c.359.612.724,1.223,1.111,1.821A31.839,31.839,0,0,1,9.6,22.915a32.846,32.846,0,0,1,1.146-3.129c.323.619.654,1.23,1.005,1.835Zm-2.13-8.459c1.012-.225,2.088-.408,3.206-.548-.373.584-.738,1.181-1.083,1.786s-.682,1.209-1,1.828c-.443-1.048-.816-2.074-1.125-3.066Zm1.927,4.845c.464-.97.97-1.92,1.5-2.855s1.111-1.842,1.716-2.735c1.055-.077,2.13-.12,3.227-.12s2.18.042,3.227.12q.9,1.329,1.709,2.721t1.526,2.841q-.707,1.455-1.519,2.869c-.534.935-1.1,1.842-1.7,2.742-1.048.077-2.138.112-3.241.112s-2.173-.035-3.206-.1q-.918-1.339-1.73-2.742c-.541-.935-1.041-1.884-1.512-2.855Zm12.7,3.6c.359-.619.7-1.245,1.027-1.877a32.64,32.64,0,0,1,1.188,3.115,30.884,30.884,0,0,1-3.3.563C23.541,22.816,23.9,22.212,24.251,21.607Zm1.013-5.379c-.33-.619-.668-1.238-1.02-1.842s-.7-1.188-1.076-1.772a32.357,32.357,0,0,1,3.227.563,31.117,31.117,0,0,1-1.132,3.052Zm-7.249-7.91A30.876,30.876,0,0,1,20.1,10.835c-1.392-.063-2.791-.063-4.184,0C16.6,9.928,17.311,9.084,18.014,8.318ZM9.858,4.008c1.181-.689,3.8.3,6.567,2.742.176.155.352.323.534.492a35.723,35.723,0,0,0-3.016,3.734,37.064,37.064,0,0,0-4.725.731c-.091-.359-.169-.724-.246-1.09-.661-3.4-.225-5.97.886-6.609ZM8.135,22.542c-.3-.084-.584-.176-.872-.274a14.341,14.341,0,0,1-4.43-2.194,3.155,3.155,0,0,1-1.322-2.1c0-1.287,2.222-2.932,5.428-4.05.4-.141.809-.267,1.216-.387a37.388,37.388,0,0,0,1.723,4.472,38.434,38.434,0,0,0-1.744,4.535Zm8.2,6.891a12.869,12.869,0,0,1-3.966,2.482,3.112,3.112,0,0,1-2.482.091c-1.118-.647-1.582-3.129-.949-6.469.077-.394.162-.788.26-1.174a35.175,35.175,0,0,0,4.774.689,37.106,37.106,0,0,0,3.037,3.755C16.784,29.025,16.559,29.236,16.334,29.433Zm1.723-1.709c-.717-.773-1.434-1.631-2.13-2.552.675.028,1.371.042,2.074.042.724,0,1.434-.014,2.138-.049a30.322,30.322,0,0,1-2.081,2.559Zm9.19,2.109a3.125,3.125,0,0,1-1.16,2.2c-1.118.647-3.5-.2-6.075-2.4-.3-.253-.591-.527-.893-.809a34.783,34.783,0,0,0,2.967-3.769,34.662,34.662,0,0,0,4.8-.738c.07.288.134.577.19.858a12.817,12.817,0,0,1,.176,4.662Zm1.28-7.559c-.2.063-.394.127-.6.183a35.719,35.719,0,0,0-1.793-4.486,35.54,35.54,0,0,0,1.723-4.423c.366.105.717.218,1.055.33,3.277,1.125,5.576,2.8,5.576,4.078,0,1.378-2.454,3.157-5.962,4.317ZM18,21.22A3.22,3.22,0,1,0,14.78,18,3.22,3.22,0,0,0,18,21.22Z" transform="translate(0 -2.251)" fill="#fff"/>
+        </svg>
+        </g><defs>
+                <linearGradient id="linear-gradient12" x1="0.085" y1="0.941" x2="0.939" y2="0.123" gradientUnits="objectBoundingBox">
+                    <stop offset="0" stop-color="#AFF8D6"/>
+                    <stop offset="1" stop-color="#00B86B"/>
+                </linearGradient>
+            </defs>
+            <rect id="gradient-box12" transform="translate(102 0)" data-name="gradient-box12" width="80" height="80" rx="20" fill="url(#linear-gradient12)"/>
+<g transform="translate(126.25 26.5105)"><svg xmlns="http://www.w3.org/2000/svg" width="31.5" height="26.979" viewBox="0 0 31.5 26.979">
+        <path id="vue-logo" data-name="vue-logo" d="M25.095,4.521H19.688l-3.937,6.23-3.375-6.23H0L15.75,31.5,31.5,4.521ZM3.916,6.771H7.7L15.75,20.707,23.794,6.771h3.783L15.75,27.035,3.916,6.771Z" transform="translate(0 -4.521)" fill="#fff"/>
+        </svg></g><defs>
+                <linearGradient id="linear-gradient22" x1="0.085" y1="0.941" x2="0.939" y2="0.123" gradientUnits="objectBoundingBox">
+                    <stop offset="0" stop-color="#9DC7FF"/>
+                    <stop offset="1" stop-color="#2579E2"/>
+                </linearGradient>
+            </defs>
+            <rect id="gradient-box22" transform="translate(204 0)" data-name="gradient-box22" width="80" height="80" rx="20" fill="url(#linear-gradient22)"/>
+<g transform="translate(226.001 22.001)"><svg xmlns="http://www.w3.org/2000/svg" width="35.998" height="35.998" viewBox="0 0 35.998 35.998">
+        <path id="next-logo" data-name="next-logo" d="M26.719,33.753c-.133.07-.126.1.007.032a.342.342,0,0,0,.105-.07c0-.024,0-.021-.113.039Zm.267-.141c-.063.049-.063.053.014.014a.216.216,0,0,0,.078-.053C27.078,33.544,27.06,33.552,26.986,33.612Zm.176-.106c-.063.049-.063.053.014.014a.216.216,0,0,0,.078-.053C27.253,33.438,27.236,33.445,27.162,33.506Zm.176-.1c-.063.049-.063.053.014.014a.216.216,0,0,0,.078-.053C27.429,33.333,27.411,33.34,27.338,33.4Zm.243-.158c-.123.078-.162.131-.052.07.078-.045.2-.141.183-.144a.7.7,0,0,0-.131.073ZM16.821.009c-.078.008-.324.032-.546.049A18.038,18.038,0,0,0,3.34,7.518,17.814,17.814,0,0,0,.164,15.382,13.8,13.8,0,0,0,0,18a13.81,13.81,0,0,0,.162,2.622A18.074,18.074,0,0,0,12.476,35.169a19.018,19.018,0,0,0,3.8.787,33.055,33.055,0,0,0,3.448,0,18.171,18.171,0,0,0,6.485-1.9c.309-.159.369-.2.327-.236Q25.056,31.87,23.6,29.9l-2.879-3.888L17.119,20.67q-1.8-2.679-3.631-5.334c-.014,0-.029,2.368-.035,5.263-.01,5.07-.014,5.274-.078,5.394a.636.636,0,0,1-.309.32c-.113.057-.212.067-.743.067h-.609l-.162-.1a.663.663,0,0,1-.236-.257l-.073-.159.007-7.055.01-7.057.109-.137a.956.956,0,0,1,.261-.215c.144-.071.2-.078.81-.078.719,0,.837.028,1.024.233q2.19,3.259,4.343,6.542c2.337,3.543,5.53,8.38,7.1,10.756l2.85,4.317.144-.095a18.51,18.51,0,0,0,3.7-3.245,17.91,17.91,0,0,0,4.236-9.2A13.8,13.8,0,0,0,36,18.007a13.81,13.81,0,0,0-.162-2.622A18.074,18.074,0,0,0,23.526.843,18.828,18.828,0,0,0,19.779.058c-.337-.034-2.664-.073-2.955-.045ZM24.189,10.9a.707.707,0,0,1,.355.415c.029.092.035,2.047.029,6.456l-.01,6.327-1.116-1.71-1.119-1.71v-4.6c0-2.973.014-4.644.035-4.725a.726.726,0,0,1,.348-.444c.144-.073.2-.081.75-.081C23.98,10.825,24.072,10.833,24.189,10.9Z" transform="translate(-0.002 -0.004)" fill="#fff"/>
+        </svg>
+        </g><defs>
+                <linearGradient id="linear-gradient32" x1="0.085" y1="0.941" x2="0.939" y2="0.123" gradientUnits="objectBoundingBox">
+                    <stop offset="0" stop-color="#7EF2C7"/>
+                    <stop offset="1" stop-color="#00B97E"/>
+                </linearGradient>
+            </defs>
+            <rect id="gradient-box32" transform="translate(306 0)" data-name="gradient-box32" width="80" height="80" rx="20" fill="url(#linear-gradient32)"/>
+<g transform="translate(328.002 26.634999999999998)"><svg xmlns="http://www.w3.org/2000/svg" width="35.996" height="26.73" viewBox="0 0 35.996 26.73">
+        <path id="nuxt-logo" data-name="nuxt-logo" d="M29.586,30.408l.035-.067a1.11,1.11,0,0,0,.08-.176l0-.007a1.74,1.74,0,0,0,.081-.91l0,.01a2.693,2.693,0,0,0-.353-.934l.008.012-7.976-14.03-1.218-2.13-1.211,2.13-7.971,14.03a2.775,2.775,0,0,0-.306.906l0,.017a1.886,1.886,0,0,0,.12,1.069l0-.012a1.214,1.214,0,0,0,.075.153l0-.006a1.971,1.971,0,0,0,1.875.9H27.667a2.272,2.272,0,0,0,1.92-.955Zm-9.34-13.974,7.288,12.822H12.96Zm15.373,11.9L25.095,9.8a2.214,2.214,0,0,0-1.773-1.181,1.961,1.961,0,0,0-1.713,1.177l-1.361,2.385,1.211,2.13,1.875-3.318,10.411,18.27h-3.96a1.78,1.78,0,0,1-.087.912l0-.012a1.158,1.158,0,0,1-.085.189l0-.006-.035.067a2.264,2.264,0,0,1-1.908.955h6.194a2.261,2.261,0,0,0,1.908-.955,1.968,1.968,0,0,0-.16-2.073ZM10.956,30.461a1.483,1.483,0,0,1-.068-.138l0-.009a1.842,1.842,0,0,1-.126-1.068l0,.01H2.251L14.9,7.008l4.15,7.3,1.2-2.13L16.63,5.8a2.211,2.211,0,0,0-1.766-1.166,1.965,1.965,0,0,0-1.713,1.181L.345,28.333a2.266,2.266,0,0,0-.112,2.125,1.971,1.971,0,0,0,1.875.9H12.834a1.966,1.966,0,0,1-1.875-.9Z" transform="translate(-0.004 -4.635)" fill="#fff"/>
+        </svg>
+        </g>
+        </g>
+        <g style="display:none" id="boxes" transform="translate(60 364)">
+            <defs>
+                <linearGradient id="linear-gradient3" x1="0.085" y1="0.941" x2="0.939" y2="0.123" gradientUnits="objectBoundingBox">
+                    <stop offset="0" stop-color="#FFFFFF"/>
+                    <stop offset="1" stop-color="#808080"/>
+                </linearGradient>
+            </defs>
+            <rect id="gradient-box3" transform="translate(0 0)" data-name="gradient-box3" width="80" height="80" rx="20" fill="url(#linear-gradient3)"/>
+<g transform="translate(40.5 40.5)">undefined</g>
+        </g>
+        <g style="display:none" id="boxes" transform="translate(60 364)">
+            <defs>
+                <linearGradient id="linear-gradient4" x1="0.085" y1="0.941" x2="0.939" y2="0.123" gradientUnits="objectBoundingBox">
+                    <stop offset="0" stop-color="#FFFFFF"/>
+                    <stop offset="1" stop-color="#808080"/>
+                </linearGradient>
+            </defs>
+            <rect id="gradient-box4" transform="translate(0 0)" data-name="gradient-box4" width="80" height="80" rx="20" fill="url(#linear-gradient4)"/>
+<g transform="translate(40.5 40.5)">undefined</g>
+        </g>
+        <g style="display:none" id="boxes" transform="translate(60 364)">
+            <defs>
+                <linearGradient id="linear-gradient5" x1="0.085" y1="0.941" x2="0.939" y2="0.123" gradientUnits="objectBoundingBox">
+                    <stop offset="0" stop-color="#FFFFFF"/>
+                    <stop offset="1" stop-color="#808080"/>
+                </linearGradient>
+            </defs>
+            <rect id="gradient-box5" transform="translate(0 0)" data-name="gradient-box5" width="80" height="80" rx="20" fill="url(#linear-gradient5)"/>
+<g transform="translate(40.5 40.5)">undefined</g>
+        </g>
+        
+    </svg>
+  

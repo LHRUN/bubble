@@ -8,6 +8,7 @@ import { AppProviders } from '@/context';
 import styles from './page.module.scss';
 import classNames from 'classnames';
 import { LalezarFont } from '@/common/font';
+import TopJumper from '@/components/topJumper';
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
           <List />
         </div>
       </main>
+      <TopJumper />
     </AppProviders>
   );
 }

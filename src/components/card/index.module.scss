@@ -1,32 +1,88 @@
 .card {
+  position: relative;
   width: 100%;
-  padding: 20px;
+  padding: 15px 15px 10px;
   cursor: pointer;
-  background-color: #A5C9CA;
-  border: solid 1px #9BBEC8;
-  border-radius: 20px;
+
+  .background {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    width: 89%;
+    height: 89%;
+    background-color: #395B64;
+    border-radius: 8px;
+    transition: width 0.3s, height 0.3s;
+  }
+
+  .like {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 3;
+    // display: none;
+    width: 40px;
+    height: 40px;
+    opacity: 0;
+    transition: all 0.5s;
+    transform: translateX(30px) scale(0);
+    // transform-origin: top right;
+
+    .likeIcon {
+      width: 100%;
+      height: 100%;
+    }
+  }
 
   &:hover {
-    box-shadow: 0px 0px 6px 0px #9BBEC8;
+    .background {
+      width: 100%;
+      height: 100%;
+    }
+
+    .like {
+      // display: block;
+      opacity: 1;
+      transform: translateX(0) scale(1);
+    }
   }
 
-  .image {
-    width: 100%;
-    height: 100%;
-    aspect-ratio: 5/4;
-    background-color: #395B64;
-    border-radius: 10px;
-  }
-  .name {
+  .main {
+    position: relative;
+    z-index: 2;
 
-    width: 100%;
-    margin-top: 20px;
-    overflow: hidden;
-    font-size: 20px;
-    line-height: 25px;
-    color: #395B64;
-    text-align: center;
-    text-overflow: ellipsis;
-    white-space: nowrap;
+    .preview {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      aspect-ratio: 5/4;
+      overflow: hidden;
+      background-color: rgba(165, 201, 202, 0.8);
+      border-radius: 6px;
+
+      .image {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        aspect-ratio: 5/4;
+        object-fit: contain;
+      }
+    }
+
+    .name {
+      width: 100%;
+      margin-top: 10px;
+      overflow: hidden;
+      font-size: 20px;
+      line-height: 21px;
+      color: #E7F6F2;
+      text-align: center;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
   }
 }

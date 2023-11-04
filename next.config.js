@@ -7,8 +7,25 @@ const nextConfig = {
     includePaths: [path.join(__dirname, 'styles')]
   },
   images: {
-    dangerouslyAllowSVG: true
+    dangerouslyAllowSVG: true,
+    loader: 'custom',
+    loaderFile: './loader/image.js',
+    formats: ['image/webp'],
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'imgur.com/**'
+      },
+      {
+        protocol: 'https',
+        hostname: '**.githubusercontent.com/**'
+      },
+      {
+        protocol: 'https',
+        hostname: '**.vercel.app/**'
+      }
+    ]
   }
 };
 
-exports.exports = nextConfig;
+module.exports = nextConfig;
