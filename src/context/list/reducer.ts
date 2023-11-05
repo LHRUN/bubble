@@ -1,10 +1,18 @@
 import { ICard } from '@/types/config';
-import { changeActivity, hideModal, showModal } from './actions';
+import {
+  changeActivity,
+  hideModal,
+  showModal,
+  updateLikes,
+  changeLanguage
+} from './actions';
 
 export interface ListState {
-  activity: string;
+  categoryActivity: string;
   visible: boolean;
   currentData: ICard | null;
+  likes: string[];
+  language: string;
 }
 
 export interface ListAction {
@@ -18,7 +26,9 @@ export type ListReducer = (state: ListState, action: ListAction) => ListState;
 export const ACTION_TYPE = {
   CHANGE_ACTIVITY: 'changeActivity',
   SHOW_MODAL: 'showModal',
-  HIDE_MODAL: 'hidenModal'
+  HIDE_MODAL: 'hidenModal',
+  UPDATE_LIKES: 'updateLikes',
+  CHANGE_LANGUAGE: 'changeLanguage'
 };
 
 export const listReducer: ListReducer = (state, action) => {
@@ -29,6 +39,10 @@ export const listReducer: ListReducer = (state, action) => {
       return showModal(state, action.payload);
     case ACTION_TYPE.HIDE_MODAL:
       return hideModal(state);
+    case ACTION_TYPE.UPDATE_LIKES:
+      return updateLikes(state, action.payload);
+    case ACTION_TYPE.CHANGE_LANGUAGE:
+      return changeLanguage(state, action.payload);
     default:
       return state;
   }

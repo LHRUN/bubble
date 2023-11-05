@@ -1,14 +1,16 @@
+import { useMemo } from 'react';
+import Image from 'next/image';
+import classNames from 'classnames';
 import Modal from '@/components/modal';
 import { useList } from '@/context/list';
 import { ACTION_TYPE } from '@/context/list/reducer';
 import styles from './index.module.scss';
-import { useMemo } from 'react';
-import Image from 'next/image';
-import classNames from 'classnames';
 import { PoppinsFont } from '@/common/font';
+import { useDescripts } from '@/common/locales';
 
 const DetailModal = () => {
   const { data, dispatch } = useList();
+  const descripts = useDescripts();
   const detail = useMemo(() => data.currentData, [data.currentData]);
 
   const changeVisible = () => {
@@ -16,7 +18,6 @@ const DetailModal = () => {
       type: ACTION_TYPE.HIDE_MODAL
     });
   };
-
   return (
     <Modal visible={data.visible} changeVisible={changeVisible}>
       <div className={styles.body}>
@@ -33,7 +34,7 @@ const DetailModal = () => {
             </a>
           </div>
           <div className={classNames(styles.desc, PoppinsFont.className)}>
-            {detail?.descript.map((item, index) => (
+            {descripts(detail?.name)?.map((item, index) => (
               <div className={styles.descItem} key={index}>
                 {item}
               </div>

@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import { ICard } from '@/types/config';
-import { FC, MouseEvent, useState } from 'react';
+import { FC, MouseEvent, useMemo } from 'react';
 import styles from './index.module.scss';
 import classNames from 'classnames';
 import { LalezarFont } from '@/common/font';
@@ -14,16 +14,21 @@ interface IProps {
 }
 
 const Card: FC<IProps> = ({ data }) => {
-  const [like, changeLike] = useState(false);
-  const { dispatch } = useList();
+  const { data: listData, dispatch } = useList();
+  const isLike = useMemo(
+    () => listData.likes.includes(data.name),
+    [data.name, listData.likes]
+  );
 
   const clickLike = (e: MouseEvent<HTMLDivElement>) => {
     e.stopPropagation();
-    changeLike(!like);
+    dispatch({
+      type: ACTION_TYPE.UPDATE_LIKES,
+      payload: data.name
+    });
   };
 
   const clickCard = () => {
-    console.log('clickCard');
     dispatch({
       type: ACTION_TYPE.SHOW_MODAL,
       payload: data
@@ -35,10 +40,10 @@ const Card: FC<IProps> = ({ data }) => {
       <div className={styles.like} onClick={clickLike}>
         <Image
           className={styles.likeIcon}
-          src={like ? SparklingHeart : GreyHeart}
+          src={isLike ? SparklingHeart : GreyHeart}
           alt="heart"
-          width={25}
-          height={25}
+          width={40}
+          height={40}
           loading="lazy"
         />
       </div>

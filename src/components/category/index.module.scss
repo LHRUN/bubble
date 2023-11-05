@@ -1,14 +1,16 @@
 .container {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
 
   .item {
     min-width: 75px;
     height: 40px;
-    padding: 0px 10px;
+    padding: 0px 12px;
+    margin-top: 15px;
     margin-right: 10px;
     font-size: 20px;
-    line-height: 40px;
+    line-height: 38px;
     color: #395B64;
     text-align: center;
     cursor: pointer;
@@ -29,6 +31,7 @@
   .like {
     width: 40px;
     height: 40px;
+    margin-top: 15px;
     margin-left: 10px;
     cursor: pointer;
 

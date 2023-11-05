@@ -60,6 +60,12 @@
       white-space: pre-wrap;
       background-color: #2C3333;
       border-radius: 15px;
+
+      .descItem {
+        &:not(:first-child) {
+          margin-top: 10px;
+        }
+      }
     }
   }
   .right {
