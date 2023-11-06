@@ -11,20 +11,20 @@
     margin-right: 10px;
     font-size: 20px;
     line-height: 38px;
-    color: #395B64;
+    color: $secondary-color;
     text-align: center;
     cursor: pointer;
-    background-color: #A5C9CA;
-    border: solid 3px #395B64;
+    background-color: $tertiary-color;
+    border: solid 3px $secondary-color;
     border-radius: 20px;
 
     &:hover {
-      border-color: #E7F6F2;
+      border-color: $light-color;
     }
 
     &_activity {
-      color: #2C3333;
-      border-color: #E7F6F2;
+      color: $primary-color;
+      border-color: $light-color;
     }
   }
 

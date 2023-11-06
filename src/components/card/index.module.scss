@@ -11,7 +11,7 @@
     z-index: 1;
     width: 89%;
     height: 89%;
-    background-color: #395B64;
+    background-color: $secondary-color;
     border-radius: 8px;
     transition: width 0.3s, height 0.3s;
   }
@@ -79,7 +79,7 @@
       overflow: hidden;
       font-size: 20px;
       line-height: 21px;
-      color: #E7F6F2;
+      color: $light-color;
       text-align: center;
       text-overflow: ellipsis;
       white-space: nowrap;

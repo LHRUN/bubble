@@ -1,8 +1,8 @@
 /* stylelint-disable scss/no-global-function-names */
 @mixin can-toggle-branding(
-  $can-toggle-off-color: #395B64, 
-  $can-toggle-on-color: #395B64,
-  $can-toggle-inactive-text: #A5C9CA,
+  $can-toggle-off-color: $secondary-color, 
+  $can-toggle-on-color: $secondary-color,
+  $can-toggle-inactive-text: $tertiary-color,
   $can-toggle-transition: cubic-bezier(0,1,0.5,1)
 ) {
 
@@ -198,9 +198,9 @@
   &.demo-rebrand-1 {
     @include can-toggle-branding
     (
-      #395B64,  // Off state color
-      #A5C9CA,  // On state color
-      #E7F6F2,  // Off state text color
+      $secondary-color,  // Off state color
+      $tertiary-color,  // On state color
+      $light-color,  // Off state text color
       ease-in-out  // Transition timing function
     ); 
   }
