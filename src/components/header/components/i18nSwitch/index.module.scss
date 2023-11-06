@@ -7,27 +7,22 @@
 ) {
 
   label {
-    
     .canToggleSwitch {
       background: lighten($can-toggle-off-color, 5%);
       transition: background-color 0.3s $can-toggle-transition;
       &:before { color: $can-toggle-inactive-text; }
       &:after {
         color: $can-toggle-off-color;
-        // Autoprefixer choked here, so making the prefixes explicit
         -webkit-transition: -webkit-transform 0.3s $can-toggle-transition;
         transition: transform 0.3s $can-toggle-transition; 
       }
-    }
-    
+    }  
   }
   
   input[type="checkbox"] {
-    
     &[disabled] ~ label {
       color: rgba($can-toggle-off-color, 0.5);
     }
-    
     &:focus ~ label, &:hover ~ label {
       .canToggleSwitch {
         background-color: $can-toggle-off-color;
@@ -44,7 +39,6 @@
           &:after { color: darken($can-toggle-on-color, 5%); }
         }
       }
-      
       &:focus, &:hover {
         ~ label {
           .canToggleSwitch {
@@ -190,18 +184,16 @@
     }
   }
   
-  // Default values for .can-toggle class
   @include can-toggle-branding; 
   @include can-toggle-appearance; 
-  
-  // Or re-brand the toggle for different applications
+
   &.demo-rebrand-1 {
     @include can-toggle-branding
     (
-      $secondary-color,  // Off state color
-      $tertiary-color,  // On state color
-      $light-color,  // Off state text color
-      ease-in-out  // Transition timing function
+      $secondary-color,
+      $tertiary-color,
+      $light-color,
+      ease-in-out
     ); 
   }
 }

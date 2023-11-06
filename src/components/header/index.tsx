@@ -2,7 +2,7 @@ import { LalezarFont, LobsterFont } from '@/common/font';
 import styles from './index.module.scss';
 import classNames from 'classnames';
 import I18NSwitch from './components/i18nSwitch';
-import githubIcon from '@/assets/image/icons/gitHub.svg';
+import githubIcon from '@/assets/image/icons/github.svg';
 import Image from 'next/image';
 
 const Header = () => {

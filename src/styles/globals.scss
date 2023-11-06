@@ -7,7 +7,7 @@
 html,
 body {
   max-width: 100vw;
-  color: #FFFFFF;
+  color: $light-color;
   background-color: #000000;
 
   &::-webkit-scrollbar {

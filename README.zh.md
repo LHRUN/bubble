@@ -1,12 +1,11 @@
 <h1 align="center">Bubble 👻</h1>
 <div align="center">
 
-  Let's start changing your profile!
+  让我们开始改变你的 Profile 吧！
 
 </div>
 
-**English** | [中文](./README.zh.md)
+**中文** | [English](./README.md)
 
 ![](public/snapshot_preview.png)
-
 

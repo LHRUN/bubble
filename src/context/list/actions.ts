@@ -15,7 +15,6 @@ export const changeActivity = (
   oldState: ListState,
   categoryActivity: string
 ) => {
-  console.log('changeActivity', categoryActivity);
   const newState = {
     ...oldState,
     categoryActivity
@@ -26,6 +25,7 @@ export const changeActivity = (
 
 /**
  * show modal
+ * @param data Data to be displayed in modal
  */
 export const showModal = (oldState: ListState, data: ICard) => {
   const newState = {

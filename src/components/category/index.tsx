@@ -1,13 +1,15 @@
-import Image from 'next/image';
 import { useState } from 'react';
 import classNames from 'classnames';
+
 import { Categories } from '@/common/config';
 import { useList } from '@/context/list';
 import { ACTION_TYPE } from '@/context/list/reducer';
-import styles from './index.module.scss';
 import { LalezarFont } from '@/common/font';
+
+import Image from 'next/image';
 import GreyHeart from '@/assets/image/icons/grey-heart.png';
 import SparklingHeart from '@/assets/image/icons/sparkling-heart.png';
+import styles from './index.module.scss';
 
 const Category = () => {
   const { data, dispatch } = useList();

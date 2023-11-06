@@ -4,9 +4,9 @@ import classNames from 'classnames';
 import Modal from '@/components/modal';
 import { useList } from '@/context/list';
 import { ACTION_TYPE } from '@/context/list/reducer';
-import styles from './index.module.scss';
 import { PoppinsFont } from '@/common/font';
 import { useDescripts } from '@/common/locales';
+import styles from './index.module.scss';
 
 const DetailModal = () => {
   const { data, dispatch } = useList();
@@ -18,6 +18,7 @@ const DetailModal = () => {
       type: ACTION_TYPE.HIDE_MODAL
     });
   };
+
   return (
     <Modal visible={data.visible} changeVisible={changeVisible}>
       <div className={styles.body}>

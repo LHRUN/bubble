@@ -1,4 +1,4 @@
-'use client';
+import { isServer } from './index';
 
 export const CATEGORY_ACTIVITY_STORAGE_KEY = 'CATEGORY_ACTIVITY';
 export const LIKES_STORAGE_KEY = 'LIKES';
@@ -13,12 +13,11 @@ export const storage = {
    * @param key localStorage key
    */
   get(key: string) {
-    if (!key) {
+    if (!key || isServer()) {
       return null;
     }
     key = key.toString();
     const data = localStorage.getItem(key);
-    console.log('storage', data);
     return data ? JSON.parse(data) : null;
   },
 
@@ -28,7 +27,7 @@ export const storage = {
    * @param value
    */
   set(key: string, value: unknown) {
-    if (!key) {
+    if (!key || isServer()) {
       return null;
     }
     localStorage.setItem(key.toString(), JSON.stringify(value));
@@ -39,8 +38,8 @@ export const storage = {
    * @param key localStorage key
    */
   deleteKey(key: string) {
-    if (!key) {
-      return;
+    if (!key || isServer()) {
+      return null;
     }
     key = key.toString();
     localStorage.removeItem(key);
@@ -50,6 +49,9 @@ export const storage = {
    * clear storage
    */
   clear() {
+    if (isServer()) {
+      return null;
+    }
     localStorage.clear();
   }
 };

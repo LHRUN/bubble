@@ -7,11 +7,10 @@ const I18NSwitch = () => {
   const { data, dispatch } = useList();
 
   const changeLan = () => {
-    console.log('changeLan');
-    const newLang = data.language === 'en' ? 'zh' : 'en';
+    const newLanguage = data.language === 'en' ? 'zh' : 'en';
     dispatch({
       type: ACTION_TYPE.CHANGE_LANGUAGE,
-      payload: newLang
+      payload: newLanguage
     });
   };
 

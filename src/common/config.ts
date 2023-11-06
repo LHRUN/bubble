@@ -73,10 +73,6 @@ export const CardList: Array<ICard> = [
   {
     name: 'Github Readme Stats',
     previewImage: GithubReadmeStats,
-    descript: [
-      '1. 要创建 GitHub 统计卡片，只需在你的 README 文件中添加一行代码，并将其中的 ?username= 替换为你的 GitHub 用户名，即可展示你的 GitHub 记录。',
-      '2. 此外，GitHub 统计卡片支持多个内置主题，并允许你通过自定义URL参数来个性化样式。'
-    ],
     github: 'https://github.com/anuraghazra/github-readme-stats',
     example: `<img src="https://github-readme-stats.vercel.app/api?username=anuraghazra" />`,
     category: [
@@ -88,10 +84,6 @@ export const CardList: Array<ICard> = [
   {
     name: 'Github Readme Lanaguages',
     previewImage: GithubReadmeLanaguages,
-    descript: [
-      '1. Github 常用语言展示，只需复制一行代码，然后把?username=改为你的Github用户名就可以展示你最🐮的编程语言',
-      '2. 此外，GitHub 常用语言展示支持多个内置主题和布局风格，你还可以通过自定义URL参数来自行定制样式。'
-    ],
     github: 'https://github.com/anuraghazra/github-readme-stats',
     example: `<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=anuraghazra&layout=compact" />`,
     category: [Categories.Analyse, Categories.Lanaguages, Categories.OnlyImage]
@@ -352,7 +344,6 @@ export const CardList: Array<ICard> = [
   {
     name: 'Activity Graph',
     previewImage: ActivityGraphSvg,
-    descript: [],
     github: 'https://github.com/Ashutosh00710/github-readme-activity-graph',
     example:
       '<img src="https://github-readme-activity-graph.vercel.app/graph?username=yyx990803" />',
@@ -391,7 +382,6 @@ export const CardList: Array<ICard> = [
     name: 'Animated Fluent Emojis',
     previewImage:
       'https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Beating%20Heart.png',
-    descript: [],
     github: 'https://animated-fluent-emoji.vercel.app/',
     example: '',
     category: [Categories.OnlyImage, Categories.Icon]

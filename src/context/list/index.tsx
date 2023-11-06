@@ -46,7 +46,7 @@ export const ListProvider: FC<{ children: ReactNode }> = ({ children }) => {
 export const useList = () => {
   const context = useContext(ListContext);
   if (!context) {
-    throw new Error('useFile must be used in FileProvider');
+    throw new Error('useList must be used in ListProvider');
   }
   return context;
 };

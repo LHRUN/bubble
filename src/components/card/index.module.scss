@@ -21,13 +21,12 @@
     top: 0;
     right: 0;
     z-index: 3;
-    // display: none;
     width: 40px;
     height: 40px;
     opacity: 0;
     transition: all 0.5s;
-    transform: translateX(30px) scale(0);
-    // transform-origin: top right;
+    transform: translateX(10px) scale(0);
+    transform-origin: center right;
 
     .likeIcon {
       width: 100%;
@@ -42,7 +41,6 @@
     }
 
     .like {
-      // display: block;
       opacity: 1;
       transform: translateX(0) scale(1);
     }

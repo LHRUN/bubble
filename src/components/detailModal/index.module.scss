@@ -18,7 +18,6 @@
     width: 100%;
     height: 100%;
     background-color: $secondary-color;
-    // filter: blur(10px);
     opacity: 0.9;
   }
 
@@ -99,7 +98,6 @@
       align-items: center;
       justify-content: center;
       width: 100%;
-      // aspect-ratio: 5/4;
       padding: 10px;
       margin-top: 15px;
       overflow: hidden;
@@ -108,7 +106,6 @@
 
       .previewImage {
         width: 100%;
-        // height: 100%;
         aspect-ratio: 5/4;
         border-radius: 15px;
         object-fit: contain;

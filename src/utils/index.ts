@@ -14,3 +14,5 @@ export function throttle(func: () => void, delay: number) {
     }
   };
 }
+
+export const isServer = () => typeof window === 'undefined';

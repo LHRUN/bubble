@@ -1,13 +1,15 @@
-import Image from 'next/image';
-import { ICard } from '@/types/config';
 import { FC, MouseEvent, useMemo } from 'react';
-import styles from './index.module.scss';
 import classNames from 'classnames';
+
+import { ICard } from '@/types/config';
 import { LalezarFont } from '@/common/font';
 import { useList } from '@/context/list';
 import { ACTION_TYPE } from '@/context/list/reducer';
+
+import Image from 'next/image';
 import GreyHeart from '@/assets/image/icons/grey-heart.png';
 import SparklingHeart from '@/assets/image/icons/sparkling-heart.png';
+import styles from './index.module.scss';
 
 interface IProps {
   data: ICard;
