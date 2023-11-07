@@ -1,34 +1,23 @@
-import { FC, MouseEvent, useMemo } from 'react';
+import { FC } from 'react';
 import classNames from 'classnames';
+import Image from 'next/image';
+import dynamic from 'next/dynamic';
 
 import { ICard } from '@/types/config';
 import { LalezarFont } from '@/common/font';
 import { useList } from '@/context/list';
 import { ACTION_TYPE } from '@/context/list/reducer';
 
-import Image from 'next/image';
-import GreyHeart from '@/assets/image/icons/grey-heart.png';
-import SparklingHeart from '@/assets/image/icons/sparkling-heart.png';
 import styles from './index.module.scss';
+
+const Love = dynamic(() => import('./components/love'), { ssr: false });
 
 interface IProps {
   data: ICard;
 }
 
 const Card: FC<IProps> = ({ data }) => {
-  const { data: listData, dispatch } = useList();
-  const isLike = useMemo(
-    () => listData.likes.includes(data.name),
-    [data.name, listData.likes]
-  );
-
-  const clickLike = (e: MouseEvent<HTMLDivElement>) => {
-    e.stopPropagation();
-    dispatch({
-      type: ACTION_TYPE.UPDATE_LIKES,
-      payload: data.name
-    });
-  };
+  const { dispatch } = useList();
 
   const clickCard = () => {
     dispatch({
@@ -39,16 +28,7 @@ const Card: FC<IProps> = ({ data }) => {
   return (
     <div onClick={() => clickCard()} className={styles.card}>
       <div className={styles.background}></div>
-      <div className={styles.like} onClick={clickLike}>
-        <Image
-          className={styles.likeIcon}
-          src={isLike ? SparklingHeart : GreyHeart}
-          alt="heart"
-          width={40}
-          height={40}
-          loading="lazy"
-        />
-      </div>
+      <Love data={data} className={styles.love} />
       <div className={styles.main}>
         <div className={styles.preview}>
           {data?.previewComponent ? (
