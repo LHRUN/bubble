@@ -1,0 +1,21 @@
+.box {
+  position: fixed;
+  right: 50px;
+  bottom: 100px;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  background-color: $primary-color;
+  border-radius: 4px;
+  transition: opacity 0.3s;
+
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+@media screen and (max-width:1200px) {
+  .box {
+    display: none;
+  }
+}

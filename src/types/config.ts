@@ -1,8 +1,8 @@
 export interface ICard {
   name: string;
-  preview: string;
-  descript: string[];
+  previewImage?: string;
+  previewComponent?: () => JSX.Element;
   github: string;
-  example: string[];
+  example: string;
   category: string[];
 }

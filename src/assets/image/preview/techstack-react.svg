@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" id="react-icon">
+  <!-- 1분 코딩 참고 -->
+  <def>
+    <style>
+      @keyframes react-ani {
+        0% {
+          stroke-dashoffset: -176;
+        }
+        50% {
+          stroke-dashoffset: 0;
+        }
+        100% {
+          stroke-dashoffset: 176;
+        }
+      }
+      #react-icon {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100px;
+        height: 100px;
+      }
+      .react-ellipse {
+        fill: none;
+        stroke: #61dafb;
+        stroke-miterlimit: 10;
+        stroke-width: 3px;
+        stroke-dasharray: 176;
+        stroke-dashoffset: -176;
+        animation: react-ani 0.7s infinite ease-in-out;
+        opacity: 1;
+      }
+      .react-ellipse-2 {
+        transform-origin: 50px 50px;
+        transform: rotate(57deg);
+        animation-delay: 0.1s;
+      }
+
+      .react-ellipse-3 {
+        transform-origin: 50px 50px;
+        transform: rotate(123deg);
+        animation-delay: 0.2s;
+      }
+    </style>
+  </def>
+  <ellipse class="react-ellipse" cx="50" cy="50" rx="40" ry="12"></ellipse>
+  <ellipse class="react-ellipse react-ellipse-2" cx="50" cy="50" rx="40" ry="12"></ellipse>
+  <ellipse class="react-ellipse react-ellipse-3" cx="50" cy="50" rx="40" ry="12"></ellipse>
+</svg>

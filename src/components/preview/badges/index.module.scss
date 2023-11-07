@@ -1,0 +1,12 @@
+.badge {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  .image {
+    &:not(:first-child) {
+      margin-top: 10px;
+    }
+  }
+}

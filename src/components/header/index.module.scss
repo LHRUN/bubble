@@ -1,13 +1,34 @@
 .container {
+  position: relative;
+
+  .nav {
+    position: absolute;
+    top: 10px;
+    right: 0;
+    z-index: 10;
+    display: flex;
+
+    .navIcon {
+      width: 28px;
+      height: 28px;
+      margin-left: 108px;
+      cursor: pointer;
+
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+  }
+
   .title {
     position: relative;
-    margin-top: 50px;
+    padding-top: 120px;
     .titleText {
       font-size: 140px;
       line-height: 130px;
       color: transparent;
       text-align: left;
-      background-image: linear-gradient(to right, #2C3333, #395B64, #A5C9CA);
+      background-image: linear-gradient(to right, $primary-color, $secondary-color, $tertiary-color);
       -webkit-background-clip: text;
     }
   }
@@ -40,12 +61,12 @@
   }
 
   .desc {
+    margin-top: 20px;
     margin-left: 6px;
-    // margin-top: 20px;
     font-size: 40px;
     color: transparent;
     text-align: left;
-    background-image: linear-gradient(to right, #A5C9CA, #395B64, #2C3333);
+    background-image: linear-gradient(to right, $tertiary-color, $secondary-color, $primary-color);
     -webkit-background-clip: text;
     transform: rotate(2deg);
   }

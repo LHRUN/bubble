@@ -1,23 +1,33 @@
 import { ICard } from '@/types/config';
 import { ListState } from './reducer';
+import {
+  storage,
+  CATEGORY_ACTIVITY_STORAGE_KEY,
+  LIKES_STORAGE_KEY,
+  LANGUAGE_KEY
+} from '@/utils/storage';
 
 /**
  * change markdown content
+ * @param categoryActivity current click category
  */
-export const changeActivity = (oldState: ListState, activity: string) => {
-  console.log('changeActivity', activity);
+export const changeActivity = (
+  oldState: ListState,
+  categoryActivity: string
+) => {
   const newState = {
     ...oldState,
-    activity
+    categoryActivity
   };
+  storage.set(CATEGORY_ACTIVITY_STORAGE_KEY, categoryActivity);
   return newState;
 };
 
 /**
  * show modal
+ * @param data Data to be displayed in modal
  */
 export const showModal = (oldState: ListState, data: ICard) => {
-  console.log('showModal', data);
   const newState = {
     ...oldState,
     visible: true,
@@ -38,5 +48,38 @@ export const hideModal = (oldState: ListState) => {
   };
 
   document.body.style.overflow = 'visible';
+  return newState;
+};
+
+/**
+ * update likes
+ * @param currentLike current click card name
+ */
+export const updateLikes = (oldState: ListState, currentLike: string) => {
+  const newLikes = new Set([...oldState.likes]);
+
+  if (newLikes.has(currentLike)) {
+    newLikes.delete(currentLike);
+  } else {
+    newLikes.add(currentLike);
+  }
+
+  const newState = {
+    ...oldState,
+    likes: Array.from(newLikes)
+  };
+  storage.set(LIKES_STORAGE_KEY, Array.from(newLikes));
+  return newState;
+};
+
+/**
+ * change language
+ */
+export const changeLanguage = (oldState: ListState, language: string) => {
+  const newState = {
+    ...oldState,
+    language
+  };
+  storage.set(LANGUAGE_KEY, language);
   return newState;
 };

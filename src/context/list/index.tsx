@@ -10,6 +10,12 @@ import {
 } from 'react';
 import { ListAction, ListReducer, ListState, listReducer } from './reducer';
 import { Categories } from '@/common/config';
+import {
+  storage,
+  CATEGORY_ACTIVITY_STORAGE_KEY,
+  LIKES_STORAGE_KEY,
+  LANGUAGE_KEY
+} from '@/utils/storage';
 
 const ListContext = createContext<{
   data: ListState;
@@ -17,11 +23,18 @@ const ListContext = createContext<{
 } | null>(null);
 ListContext.displayName = 'ListContext';
 
+const likesStorage = storage.get(LIKES_STORAGE_KEY) || [];
+const languageStorage = storage.get(LANGUAGE_KEY) || 'en';
+const categoryActivityStorage =
+  storage.get(CATEGORY_ACTIVITY_STORAGE_KEY) || Categories.All;
+
 export const ListProvider: FC<{ children: ReactNode }> = ({ children }) => {
   const [data, dispatch] = useReducer<ListReducer>(listReducer, {
-    activity: Categories.All,
+    categoryActivity: categoryActivityStorage,
     visible: false,
-    currentData: null
+    currentData: null,
+    likes: likesStorage,
+    language: languageStorage
   });
   return (
     <ListContext.Provider value={{ data, dispatch }}>
@@ -33,7 +46,7 @@ export const ListProvider: FC<{ children: ReactNode }> = ({ children }) => {
 export const useList = () => {
   const context = useContext(ListContext);
   if (!context) {
-    throw new Error('useFile must be used in FileProvider');
+    throw new Error('useList must be used in ListProvider');
   }
   return context;
 };

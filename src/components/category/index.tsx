@@ -1,12 +1,20 @@
+import { useState } from 'react';
+import classNames from 'classnames';
+
 import { Categories } from '@/common/config';
 import { useList } from '@/context/list';
 import { ACTION_TYPE } from '@/context/list/reducer';
-import styles from './index.module.scss';
-import classNames from 'classnames';
 import { LalezarFont } from '@/common/font';
+
+import Image from 'next/image';
+import GreyHeart from '@/assets/image/icons/grey-heart.png';
+import SparklingHeart from '@/assets/image/icons/sparkling-heart.png';
+import styles from './index.module.scss';
 
 const Category = () => {
   const { data, dispatch } = useList();
+  const [isMouseMoveLike, setIsMouseMoveLike] = useState(false);
+
   const clickItem = (item: string) => {
     dispatch({
       type: ACTION_TYPE.CHANGE_ACTIVITY,
@@ -20,7 +28,7 @@ const Category = () => {
         <div
           className={classNames({
             [styles.item]: true,
-            [styles.item_activity]: item === data.activity,
+            [styles.item_activity]: item === data.categoryActivity,
             [LalezarFont.className]: true
           })}
           key={item}
@@ -29,6 +37,24 @@ const Category = () => {
           {item}
         </div>
       ))}
+      <div
+        onMouseEnter={() => setIsMouseMoveLike(true)}
+        onMouseLeave={() => setIsMouseMoveLike(false)}
+        onClick={() => clickItem('like')}
+        className={styles.like}
+      >
+        <Image
+          className={styles.likeIcon}
+          src={
+            data.categoryActivity === 'like' || isMouseMoveLike
+              ? SparklingHeart
+              : GreyHeart
+          }
+          alt="heart"
+          width={40}
+          height={40}
+        />
+      </div>
     </div>
   );
 };

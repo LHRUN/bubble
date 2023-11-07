@@ -9,7 +9,6 @@ interface IProps {
 }
 
 const Modal: FC<IProps> = ({ children, visible, changeVisible }) => {
-  console.log('visible', visible);
   if (!visible) {
     return null;
   }

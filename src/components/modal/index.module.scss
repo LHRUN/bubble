@@ -12,12 +12,19 @@
 
   .content {
     display: flex;
-    transition: all 0.3s;
     transform: scale(0);
-    transform-origin: center;
 
     &_show {
-      transform: scale(1);
+      animation: show 0.5s forwards;
     }
+  }
+}
+
+@keyframes show {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
   }
 }

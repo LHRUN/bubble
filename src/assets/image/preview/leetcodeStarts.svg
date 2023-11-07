@@ -1,0 +1,433 @@
+<svg class="top-level-svg-wrapper" xmlns="http://www.w3.org/2000/svg" xmlns:xhtml="http://www.w3.org/1999/xhtml"
+  width="400" height="186">
+  <style>
+    svg:not(:root) {
+      overflow: hidden;
+    }
+
+    .top-level-svg-wrapper {
+      font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      line-height: 1.5;
+    }
+
+    *,
+    :after,
+    :before {
+      border: 0 solid;
+      box-sizing: border-box;
+    }
+
+    :after,
+    :before {
+      --tw-content: "";
+    }
+
+    :-moz-focusring {
+      outline: auto;
+    }
+
+    :disabled {
+      cursor: default;
+    }
+
+    svg {
+      display: block;
+      vertical-align: middle;
+    }
+
+    *,
+    :after,
+    :before {
+      --tw-border-spacing-x: 0;
+      --tw-border-spacing-y: 0;
+      --tw-translate-x: 0;
+      --tw-translate-y: 0;
+      --tw-rotate: 0;
+      --tw-skew-x: 0;
+      --tw-skew-y: 0;
+      --tw-scale-x: 1;
+      --tw-scale-y: 1;
+      --tw-scroll-snap-strictness: proximity;
+      --tw-ring-offset-width: 0px;
+      --tw-ring-offset-color: #fff;
+      --tw-ring-color: rgba(59, 130, 246, .5);
+      --tw-ring-offset-shadow: 0 0 #0000;
+      --tw-ring-shadow: 0 0 #0000;
+      --tw-shadow: 0 0 #0000;
+      --tw-shadow-colored: 0 0 #0000;
+    }
+
+    .absolute {
+      position: absolute;
+    }
+
+    .relative {
+      position: relative;
+    }
+
+    .left-1\/2 {
+      left: 50%;
+    }
+
+    .top-1\/2 {
+      top: 50%;
+    }
+
+    .mx-3 {
+      margin-left: .75rem;
+      margin-right: .75rem;
+    }
+
+    .mt-6 {
+      margin-top: 1.5rem;
+    }
+
+    .mr-\[5px\] {
+      margin-right: 5px;
+    }
+
+    .mr-8 {
+      margin-right: 2rem;
+    }
+
+    .flex {
+      display: flex;
+    }
+
+    .h-full {
+      height: 100%;
+    }
+
+    .h-2 {
+      height: .5rem;
+    }
+
+    .h-1 {
+      height: .25rem;
+    }
+
+    .max-h-\[100px\] {
+      max-height: 100px;
+    }
+
+    .min-h-\[186px\] {
+      min-height: 186px;
+    }
+
+    .w-full {
+      width: 100%;
+    }
+
+    .w-\[53px\] {
+      width: 53px;
+    }
+
+    .w-\[100px\] {
+      width: 100px;
+    }
+
+    .min-w-max {
+      min-width: -webkit-max-content;
+      min-width: -moz-max-content;
+      min-width: max-content;
+    }
+
+    .min-w-\[100px\] {
+      min-width: 100px;
+    }
+
+    .max-w-none {
+      max-width: none;
+    }
+
+    .max-w-full {
+      max-width: 100%;
+    }
+
+    .max-w-\[100px\] {
+      max-width: 100px;
+    }
+
+    .flex-1 {
+      flex: 1 1 0%;
+    }
+
+    .origin-center {
+      transform-origin: center;
+    }
+
+    .-translate-y-1\/2 {
+      --tw-translate-y: -50%;
+    }
+
+    .-translate-x-1\/2,
+    .-translate-y-1\/2 {
+      transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+    }
+
+    .-translate-x-1\/2 {
+      --tw-translate-x: -50%;
+    }
+
+    .-rotate-90 {
+      --tw-rotate: -90deg;
+    }
+
+    .-rotate-90 {
+      transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+    }
+
+    .transform {
+      transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+    }
+
+    .flex-col {
+      flex-direction: column;
+    }
+
+    .items-end {
+      align-items: flex-end;
+    }
+
+    .items-center {
+      align-items: center;
+    }
+
+    .justify-center {
+      justify-content: center;
+    }
+
+    .space-y-2&gt;
+
+    :not([hidden])~:not([hidden]) {
+      --tw-space-y-reverse: 0;
+      margin-bottom: calc(.5rem*var(--tw-space-y-reverse));
+      margin-top: calc(.5rem*(1 - var(--tw-space-y-reverse)));
+    }
+
+    .space-y-4&gt;
+
+    :not([hidden])~:not([hidden]) {
+      --tw-space-y-reverse: 0;
+      margin-bottom: calc(1rem*var(--tw-space-y-reverse));
+      margin-top: calc(1rem*(1 - var(--tw-space-y-reverse)));
+    }
+
+    .space-x-1\.5&gt;
+
+    :not([hidden])~:not([hidden]) {
+      --tw-space-x-reverse: 0;
+      margin-left: calc(.375rem*(1 - var(--tw-space-x-reverse)));
+      margin-right: calc(.375rem*var(--tw-space-x-reverse));
+    }
+
+    .overflow-hidden {
+      overflow: hidden;
+    }
+
+    .whitespace-nowrap {
+      white-space: nowrap;
+    }
+
+    .rounded-lg {
+      border-radius: .5rem;
+    }
+
+    .rounded-full {
+      border-radius: 9999px;
+    }
+
+    .bg-layer-1 {
+      background-color: #FFF;
+    }
+
+    .bg-red-s {
+      background-color: rgb(239 71 67);
+    }
+
+    .bg-red-1 {
+      background-color: rgba(239, 71, 67, .15);
+    }
+
+    .bg-olive {
+      background-color: rgb(0 175 155);
+    }
+
+    .bg-yellow {
+      background-color: rgb(255 184 0);
+    }
+
+    .bg-green-1 {
+      background-color: rgba(45, 181, 93, .15);
+    }
+
+    .bg-yellow-1 {
+      background-color: rgba(255, 184, 0, .15);
+    }
+
+    .px-\[13px\] {
+      padding-left: 13px;
+      padding-right: 13px;
+    }
+
+    .pt-4 {
+      padding-top: 1rem;
+    }
+
+    .pb-3 {
+      padding-bottom: .75rem;
+    }
+
+    .text-center {
+      text-align: center;
+    }
+
+    .text-base {
+      font-size: 1rem;
+      line-height: 1.5rem;
+    }
+
+    .text-xs {
+      font-size: .75rem;
+      line-height: 1rem;
+    }
+
+    .text-\[24px\] {
+      font-size: 24px;
+    }
+
+    .font-medium {
+      font-weight: 500;
+    }
+
+    .leading-\[20px\] {
+      line-height: 20px;
+    }
+
+    .text-label-1 {
+      color: #262626;
+    }
+
+    .text-label-2 {
+      color: rgba(38,38,38,.75);
+    }
+
+    .text-label-3 {
+      color: rgba(60, 60, 67, .6);
+    }
+
+    .text-label-4 {
+      color: rgba(60, 60, 67, .3);
+    }
+
+    .shadow-level3 {
+      --tw-shadow: 0px 1px 3px rgba(0, 0, 0, .04), 0px 6px 16px rgba(0, 0, 0, .12);
+      --tw-shadow-colored: 0px 1px 3px var(--tw-shadow-color), 0px 6px 16px var(--tw-shadow-color);
+      box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+    }
+
+    .drop-shadow-\[0_2px_4px_rgba\(255\2c 161\2c 22\2c 0\.2\)\] {
+      --tw-drop-shadow: drop-shadow(0 2px 4px rgba(255, 161, 22, .2));
+    }
+
+    .drop-shadow-\[0_2px_4px_rgba\(255\2c 161\2c 22\2c 0\.2\)\] {
+      filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+    }
+
+    .z-base {
+      z-index: 0;
+    }
+
+    .lc-xl\:mx-8 {
+      margin-left: 2rem;
+      margin-right: 2rem;
+    }
+
+    .lc-xl\:inline {
+      display: inline;
+    }
+
+    .lc-xl\:h-\[186px\] {
+      height: 186px;
+    }
+
+    .lc-xl\:max-w-\[228px\] {
+      max-width: 228px;
+    }
+
+  </style>
+  <foreignObject x="0" y="0" width="400" height="186">
+    <div xmlns="http://www.w3.org/1999/xhtml" class="min-w-max max-w-full w-full flex-1">
+      <div
+        class="shadow-level3 dark:shadow-dark-level3 bg-layer-1 dark:bg-dark-layer-1 rounded-lg min-h-[186px] w-full pt-4 pb-3 lc-xl:h-[186px]">
+        <div class="px-[13px] text-xs font-medium text-label-3 dark:text-dark-label-3">Solved Problems</div>
+        <div class="mx-3 flex items-center lc-xl:mx-8">
+          <div class="mr-8 mt-6 flex min-w-[100px] justify-center">
+            <div class="shrink-1 relative max-h-[100px] max-w-[100px] z-base">
+              <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 transform text-center">
+                <div>
+                  <div class="text-[24px] font-medium text-label-1 dark:text-dark-label-1">283</div>
+                  <div class="whitespace-nowrap text-xs text-label-3 dark:text-dark-label-3">Solved</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex w-full flex-col space-y-4 lc-xl:max-w-[228px]">
+            <div class="space-y-2">
+              <div class="flex w-full items-end text-xs">
+                <div class="w-[53px] text-label-3 dark:text-dark-label-3">Easy</div>
+                <div class="flex flex-1 items-center"><span
+                    class="mr-[5px] text-base font-medium leading-[20px] text-label-1 dark:text-dark-label-1">68</span><span
+                    class="text-xs font-medium text-label-4 dark:text-dark-label-4">/742</span></div>
+                <div class="lc-lg:hidden lc-xl:inline text-label-3 dark:text-dark-label-3"><span
+                    class="space-x-1.5"><span>Beats</span><span
+                      class="font-medium text-label-2 dark:text-dark-label-2">84.2%</span></span></div>
+              </div>
+              <div class="relative h-2 w-full overflow-hidden rounded-full h-1 max-w-none">
+                <div class="absolute h-full w-full bg-green-1 dark:bg-dark-green-1"></div>
+                <div
+                  class="absolute h-full rounded-full transition-all duration-300 ease-out bg-olive dark:bg-dark-olive"
+                  style="width: 9.1644%;"></div>
+              </div>
+            </div>
+            <div class="space-y-2">
+              <div class="flex w-full items-end text-xs">
+                <div class="w-[53px] text-label-3 dark:text-dark-label-3">Medium</div>
+                <div class="flex flex-1 items-center"><span
+                    class="mr-[5px] text-base font-medium leading-[20px] text-label-1 dark:text-dark-label-1">157</span><span
+                    class="text-xs font-medium text-label-4 dark:text-dark-label-4">/1540</span></div>
+                <div class="lc-lg:hidden lc-xl:inline text-label-3 dark:text-dark-label-3"><span
+                    class="space-x-1.5"><span>Beats</span><span
+                      class="font-medium text-label-2 dark:text-dark-label-2">91.8%</span></span></div>
+              </div>
+              <div class="relative h-2 w-full overflow-hidden rounded-full h-1 max-w-none">
+                <div class="absolute h-full w-full bg-yellow-1 dark:bg-dark-yellow-1"></div>
+                <div
+                  class="absolute h-full rounded-full transition-all duration-300 ease-out bg-yellow dark:bg-dark-yellow"
+                  style="width: 10.1948%;"></div>
+              </div>
+            </div>
+            <div class="space-y-2">
+              <div class="flex w-full items-end text-xs">
+                <div class="w-[53px] text-label-3 dark:text-dark-label-3">Hard</div>
+                <div class="flex flex-1 items-center"><span
+                    class="mr-[5px] text-base font-medium leading-[20px] text-label-1 dark:text-dark-label-1">58</span><span
+                    class="text-xs font-medium text-label-4 dark:text-dark-label-4">/640</span></div>
+                <div class="lc-lg:hidden lc-xl:inline text-label-3 dark:text-dark-label-3"><span
+                    class="space-x-1.5"><span>Beats</span><span
+                      class="font-medium text-label-2 dark:text-dark-label-2">93.4%</span></span></div>
+              </div>
+              <div class="relative h-2 w-full overflow-hidden rounded-full h-1 max-w-none">
+                <div class="absolute h-full w-full bg-red-1 dark:bg-dark-red-1"></div>
+                <div
+                  class="absolute h-full rounded-full transition-all duration-300 ease-out bg-red-s dark:bg-dark-red-s"
+                  style="width: 9.0625%;"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </foreignObject>
+</svg>
