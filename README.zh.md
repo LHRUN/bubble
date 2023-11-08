@@ -2,13 +2,19 @@
   <span style="background-image: linear-gradient(to right, #2C3333, #395B64, #A5C9CA);color: transparent;-webkit-background-clip: text;font-size:50px;">Bubble</span>
   <span style="font-size:30px;">👻</span>
 </h1>
-<div style="margin-bottom:50px;background-image: linear-gradient(to right, #2C3333, #395B64, #A5C9CA);color: transparent;-webkit-background-clip: text;" align="center">
-
-  让我们开始改变你的 Profile 吧！
-
-</div>
+<h3 style="margin-bottom:50px;background-image: linear-gradient(to right, #2C3333, #395B64, #A5C9CA);color: transparent;-webkit-background-clip: text;" align="center">
+让我们开始改变你的 Profile 吧！
+</h3>
 
 **中文** | [English](./README.md)
+
+<h2
+  style="background-image: linear-gradient(to right, #2C3333, #395B64, #A5C9CA);color: transparent;-webkit-background-clip: text;"
+>
+  预览
+</h2>
+
+Link: [https://bubble-gules.vercel.app/](https://bubble-gules.vercel.app/)
 
 ![](public/snapshot_preview.png)
 
@@ -16,11 +22,11 @@
   📜 目前，所有内容均由我手动收录，因此，如果有你觉得有趣而我没有收录的内容，欢迎提Issue。我会随时关注。
 </p>
 
-<h3
+<h2
   style="background-image: linear-gradient(to right, #2C3333, #395B64, #A5C9CA);color: transparent;-webkit-background-clip: text;"
 >
   已收录
-</h3>
+</h2>
 
 + [Snk](https://github.com/Platane/snk)
 + [Github Readme Streak Stats](https://github.com/DenverCoder1/github-readme-streak-stats)
