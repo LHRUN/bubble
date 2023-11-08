@@ -14,7 +14,7 @@ Let's start changing your profile!
   Preview
 </h2>
 
-Link: [https://bubble-gules.vercel.app/](https://bubble-gules.vercel.app/)
+Link: [https://bubble-awesome-profile.vercel.app/](https://bubble-awesome-profile.vercel.app/)
 
 ![](public/snapshot_preview.png)
 
