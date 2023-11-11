@@ -4,10 +4,21 @@
   margin: 0 auto;
 
   .main {
+    position: relative;
+    z-index: 3;
     width: 100%;
     padding: 25px 20px 40px;
-    margin: 30px 0;
-    background-color: $primary-color;
+    margin-bottom: 30px;
+    overflow: hidden;
     border-radius: 20px;
+    border-top-right-radius: 0px;
+  }
+
+  .Components {
+    background-color: $primary-color;
+  }
+
+  .Profiles {
+    background-color: $secondary-color;
   }
 }

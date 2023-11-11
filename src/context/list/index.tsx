@@ -9,13 +9,8 @@ import {
   useReducer
 } from 'react';
 import { ListAction, ListReducer, ListState, listReducer } from './reducer';
-import { Categories } from '@/common/config';
-import {
-  storage,
-  CATEGORY_ACTIVITY_STORAGE_KEY,
-  LIKES_STORAGE_KEY,
-  LANGUAGE_KEY
-} from '@/utils/storage';
+import { Categories } from '@/common/components';
+import { tabOptions } from '@/common/config';
 
 const ListContext = createContext<{
   data: ListState;
@@ -23,18 +18,14 @@ const ListContext = createContext<{
 } | null>(null);
 ListContext.displayName = 'ListContext';
 
-const likesStorage = storage.get(LIKES_STORAGE_KEY) || [];
-const languageStorage = storage.get(LANGUAGE_KEY) || 'en';
-const categoryActivityStorage =
-  storage.get(CATEGORY_ACTIVITY_STORAGE_KEY) || Categories.All;
-
 export const ListProvider: FC<{ children: ReactNode }> = ({ children }) => {
   const [data, dispatch] = useReducer<ListReducer>(listReducer, {
-    categoryActivity: categoryActivityStorage,
+    categoryActivity: Categories.All,
     visible: false,
     currentData: null,
-    likes: likesStorage,
-    language: languageStorage
+    likes: [],
+    language: 'en',
+    currentTab: tabOptions[0].title
   });
   return (
     <ListContext.Provider value={{ data, dispatch }}>
