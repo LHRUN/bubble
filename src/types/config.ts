@@ -11,4 +11,5 @@ export interface IProfileCard {
   name: string;
   snapshootTime: string;
   imageUrl: string;
+  githubUrl: string;
 }

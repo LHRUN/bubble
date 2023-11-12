@@ -1,11 +1,11 @@
 import { Categories, ComponentCardList } from '@/common/components';
 import { useList } from '@/context/list';
-import ComponentsCard from '@/components/componentsCard';
+import ComponentCard from '@/components/componentCard';
 import styles from './index.module.scss';
 import DetailModal from '../detailModal';
 import { useMemo } from 'react';
 
-const ComponentsList = () => {
+const ComponentList = () => {
   const { data } = useList();
   const listData = useMemo(() => {
     return ComponentCardList.filter((item) => {
@@ -22,7 +22,7 @@ const ComponentsList = () => {
       {listData.length ? (
         listData.map((item) => (
           <div key={item.name} className={styles.item}>
-            <ComponentsCard data={item} />
+            <ComponentCard data={item} />
           </div>
         ))
       ) : (
@@ -33,4 +33,4 @@ const ComponentsList = () => {
   );
 };
 
-export default ComponentsList;
+export default ComponentList;

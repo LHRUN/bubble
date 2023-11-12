@@ -6,9 +6,16 @@ import {
   ReactNode,
   createContext,
   useContext,
+  useEffect,
   useReducer
 } from 'react';
-import { ListAction, ListReducer, ListState, listReducer } from './reducer';
+import {
+  ACTION_TYPE,
+  ListAction,
+  ListReducer,
+  ListState,
+  listReducer
+} from './reducer';
 import { Categories } from '@/common/components';
 import { tabOptions } from '@/common/config';
 
@@ -27,6 +34,13 @@ export const ListProvider: FC<{ children: ReactNode }> = ({ children }) => {
     language: 'en',
     currentTab: tabOptions[0].title
   });
+
+  useEffect(() => {
+    dispatch({
+      type: ACTION_TYPE.INIT_STORAGE
+    });
+  }, []);
+
   return (
     <ListContext.Provider value={{ data, dispatch }}>
       {children}

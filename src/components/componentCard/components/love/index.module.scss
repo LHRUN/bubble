@@ -6,7 +6,7 @@
   width: 40px;
   height: 40px;
   opacity: 0;
-  transition: all 0.5s;
+  transition: transform 0.5s;
   transform: translateX(10px) scale(0);
   transform-origin: center right;
 

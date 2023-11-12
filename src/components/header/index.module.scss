@@ -51,7 +51,7 @@
       cursor: pointer;
       background-color: #DE8F5F;
       border-radius: 11px;
-      transition: all 1s;
+      transition: transform 1s;
       transform: rotateY(0deg) rotate(15deg);
 
       &:hover{

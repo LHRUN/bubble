@@ -16,7 +16,7 @@ interface IProps {
   data: IComponentCard;
 }
 
-const ComponentsCard: FC<IProps> = ({ data }) => {
+const ComponentCard: FC<IProps> = ({ data }) => {
   const { dispatch } = useList();
 
   const clickCard = () => {
@@ -52,4 +52,4 @@ const ComponentsCard: FC<IProps> = ({ data }) => {
   );
 };
 
-export default ComponentsCard;
+export default ComponentCard;

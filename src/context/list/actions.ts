@@ -113,7 +113,7 @@ export const initStorage = (oldState: ListState) => {
     categoryActivity: categoryActivityStorage,
     likes: likesStorage,
     language: languageStorage,
-    currentTab: currentTabStorage
+    currentTab: currentTabStorage.toLowerCase()
   };
   return newState;
 };

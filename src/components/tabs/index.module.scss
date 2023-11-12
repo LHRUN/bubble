@@ -1,5 +1,5 @@
-$max-tab-height: 42px;
-$tab-height: 32px;
+$max-tab-height: 38px;
+$tab-height: 28px;
 
 .tab-list {
 	position: relative;
@@ -8,7 +8,7 @@ $tab-height: 32px;
   flex-direction: row-reverse;
   align-items: flex-end;
   height: $max-tab-height;
-  margin-top: 30px;
+  margin-top: 40px;
   margin-left: auto;
   background-color: #000000;
 
@@ -23,19 +23,27 @@ $tab-height: 32px;
     border-top-right-radius: 15px;
     transition: all 0.2s;
 
+    .tabBox {
+      transform: translateY(-12px);
+    }
+
     .firstChat {
       position: relative;
       top: 2px;
       display: inline-block;
-      margin-right: 2px;
       font-size: 40px;
-      transform: rotate(0deg);
+    }
+    .otherChat {
+      font-size: 24px;
     }
 
-    &.Profiles {
+    &.profiles {
       background-color: $secondary-color;
+      .otherChat {
+        margin-left: -2px;
+      }
     }
-    &.Components {
+    &.components {
       background-color: $primary-color;
     }
 
@@ -52,9 +60,7 @@ $tab-height: 32px;
 
     .firstChat {
       top: -3px;
-      margin-right: 6px;
-      font-size: 60px;
-      transform: rotate(28deg);
+      font-size: 50px;
     }
   }
 

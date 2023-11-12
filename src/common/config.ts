@@ -1,6 +1,6 @@
 export const tabTitles = {
-  COMPONENTS: 'Components',
-  PROFILE: 'Profiles'
+  COMPONENTS: 'components',
+  PROFILE: 'profiles'
 };
 
 export const tabOptions = [
