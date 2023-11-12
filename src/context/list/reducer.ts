@@ -1,18 +1,21 @@
-import { ICard } from '@/types/config';
+import { IComponentCard } from '@/types/config';
 import {
   changeActivity,
   hideModal,
   showModal,
   updateLikes,
-  changeLanguage
+  changeLanguage,
+  changeTabs,
+  initStorage
 } from './actions';
 
 export interface ListState {
   categoryActivity: string;
   visible: boolean;
-  currentData: ICard | null;
+  currentData: IComponentCard | null;
   likes: string[];
   language: string;
+  currentTab: string;
 }
 
 export interface ListAction {
@@ -24,11 +27,13 @@ export interface ListAction {
 export type ListReducer = (state: ListState, action: ListAction) => ListState;
 
 export const ACTION_TYPE = {
+  INIT_STORAGE: 'initStorage',
   CHANGE_ACTIVITY: 'changeActivity',
   SHOW_MODAL: 'showModal',
   HIDE_MODAL: 'hidenModal',
   UPDATE_LIKES: 'updateLikes',
-  CHANGE_LANGUAGE: 'changeLanguage'
+  CHANGE_LANGUAGE: 'changeLanguage',
+  CHANGE_TAB: 'changeTab'
 };
 
 export const listReducer: ListReducer = (state, action) => {
@@ -43,6 +48,10 @@ export const listReducer: ListReducer = (state, action) => {
       return updateLikes(state, action.payload);
     case ACTION_TYPE.CHANGE_LANGUAGE:
       return changeLanguage(state, action.payload);
+    case ACTION_TYPE.CHANGE_TAB:
+      return changeTabs(state, action.payload);
+    case ACTION_TYPE.INIT_STORAGE:
+      return initStorage(state);
     default:
       return state;
   }

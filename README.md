@@ -3,7 +3,7 @@
   <span style="font-size:30px;">👻</span>
 </h1>
 <h3 style="margin-bottom:50px;background-image: linear-gradient(to right, #2C3333, #395B64, #A5C9CA);color: transparent;-webkit-background-clip: text;" align="center">
-Let's start changing your profile!
+<i>Let's start changing your profile!</i>
 </h3>
 
 **English** | [中文](./README.zh.md)
@@ -16,7 +16,7 @@ Let's start changing your profile!
 
 Link: [https://bubble-awesome-profile.vercel.app/](https://bubble-awesome-profile.vercel.app/)
 
-![](public/snapshot_preview.png)
+![](https://raw.githubusercontent.com/LHRUN/file-store/main/bubble/snapshot_preview_v1.1.0.png)
 
 <p>
   📜 Currently the content is all manually included by me, so if there are components you find interesting that I haven't recorded, Welcome to the Issues. I'll be watching.
@@ -25,7 +25,7 @@ Link: [https://bubble-awesome-profile.vercel.app/](https://bubble-awesome-profil
 <h2
   style="background-image: linear-gradient(to right, #2C3333, #395B64, #A5C9CA);color: transparent;-webkit-background-clip: text;"
 >
-  Records
+  Components
 </h2>
 
 + [Snk](https://github.com/Platane/snk)
@@ -64,4 +64,68 @@ Link: [https://bubble-awesome-profile.vercel.app/](https://bubble-awesome-profil
 + [GitHub Readme YouTube Cards](https://github.com/DenverCoder1/github-readme-youtube-cards)
 + [Animated Fluent Emojis](https://animated-fluent-emoji.vercel.app/)
 
+<h2
+  style="background-image: linear-gradient(to right, #2C3333, #395B64, #A5C9CA);color: transparent;-webkit-background-clip: text;"
+>
+  Profiles
+</h2>
 
++ [Alexandre Sanlim](https://github.com/alexandresanlim)
++ [Anmol Singh](https://github.com/anmol098)
++ [Michael Hoffmann](https://github.com/mokkapps)
++ [Mike Coutermarsh](https://github.com/mscoutermarsh)
++ [Gautam krishna R](https://github.com/gautamkrishnar)
++ [Jessica Lim](https://github.com/JessicaLim8)
++ [Erwin Lejeune](https://github.com/guilyx)
++ [Yufan You](https://github.com/ouuan)
++ [Stanley Lim](https://github.com/Spiderpig86)
++ [Danny Koppenhagen](https://github.com/d-koppenhagen)
++ [编程吴彦祖 代码蔡徐坤](https://github.com/itgoyo)
++ [Tim Burgan](https://github.com/timburgan)
++ [Kyle](https://github.com/kylepls)
++ [Marc](https://github.com/marcizhu)
++ [AaronLiu](https://github.com/HFO4)
++ [Kittinan](https://github.com/kittinan)
++ [Andrew Young](https://github.com/andyruwruw)
++ [Jonah Lawrence](https://github.com/DenverCoder1)
++ [Osman Durdağ](https://github.com/zumrudu-anka)
++ [Raymond Li](https://github.com/Raymo111)
++ [Rafnix Guzman](https://github.com/rafnixg)
++ [Miller Camilo Vega](https://github.com/minoveaz)
++ [Khaleel Gibran](https://github.com/khalby786)
++ [Quin](https://github.com/cheesits456)
++ [Abhishek Choudhary](https://github.com/theabbie)
++ [Haany Ali](https://github.com/MarikIshtar007)
++ [Yash Sahijwani](https://github.com/Terabyte17)
++ [Matthew Taylor](https://github.com/Wrapperup)
++ [Mathieu Ledru](https://github.com/matyo91)
++ [Cyris](https://github.com/CyrisXD)
++ [Ashutosh Saxena](https://github.com/Xx-Ashutosh-xX)
++ [Sarah Engel](https://github.com/PrincessAkira)
++ [Pouya Saadeghi](https://github.com/saadeghi)
++ [Ari](https://github.com/ari-hacks)
++ [Shanu Mishra](https://github.com/Shanu1515)
++ [Siv Ram Shastri Jonnalagadda](https://github.com/Prince-Shivaram)
++ [Sindre Sorhus](https://github.com/sindresorhus)
++ [Kelvin](https://github.com/KelviNosse)
++ [Rishav Anand](https://github.com/rishavanand)
++ [Shahriar Shafin](https://github.com/ShahriarShafin)
++ [afc163](https://github.com/afc163)
++ [Kelechi Precious Nwachukwu](https://github.com/PluckyPrecious)
++ [Ghazi Khan](https://github.com/gkhan205)
++ [Alex Martin](https://github.com/AlexMartinFR)
++ [dailyrandomphoto](https://github.com/dailyrandomphoto)
++ [akasky](https://github.com/akasrai)
++ [Ileriayo Adebiyi](https://github.com/ileriayo)
++ [Thomas George Thomas](https://github.com/Thomas-George-T)
++ [Christian Petersen](https://github.com/fnky)
++ [Livio Brunner](https://github.com/BrunnerLivio)
++ [Roy](https://github.com/RoyRao2333)
++ [Tron](https://github.com/Achuan-2)
++ [Weiming Dong](https://github.com/dongweiming)
++ [dingxiaowei](https://github.com/dingxiaowei)
++ [Louis](https://github.com/Louis3797)
++ [Brian Douglas](https://github.com/bdougie)
++ [Thomas Guibert](https://github.com/thmsgbrt)
++ [Gaëtan Bloch](https://github.com/gaetanBloch)
++ [三咲智子 Kevin Deng](https://github.com/sxzz)

@@ -3,6 +3,7 @@ import { isServer } from './index';
 export const CATEGORY_ACTIVITY_STORAGE_KEY = 'CATEGORY_ACTIVITY';
 export const LIKES_STORAGE_KEY = 'LIKES';
 export const LANGUAGE_KEY = 'LANGUAGE';
+export const CURRENT_TAB_KEY = 'CURRENT_TAB';
 
 /**
  * localStorage

@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import classNames from 'classnames';
 
-import { Categories } from '@/common/config';
+import { Categories } from '@/common/components';
 import { useList } from '@/context/list';
 import { ACTION_TYPE } from '@/context/list/reducer';
 import { LalezarFont } from '@/common/font';

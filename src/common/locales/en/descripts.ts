@@ -146,5 +146,10 @@ export const descripts: Record<string, string[]> = {
   ],
   'Animated Fluent Emojis': [
     '1. All the Microsoft animated fluent emojis are available in one place and ready to use in your next project or README file.'
+  ],
+  'Steam Card': [
+    '1. Generate Your Steam Profile Card Quickly',
+    '2. Multiple themes and multiple language configurations are built in, with support for more than 10 customizations. Preview available at https://card.yuy1n.io/.',
+    '3. Support deploy it with Vercel, Netlify, Railway or Docker.'
   ]
 };

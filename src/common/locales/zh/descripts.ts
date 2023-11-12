@@ -137,5 +137,10 @@ export const descripts: Record<string, string[]> = {
   ],
   'Animated Fluent Emojis': [
     '1. 微软所有的 animated fluent emojis 都在这里，可以在 Readme 中随时使用。'
+  ],
+  'Steam Card': [
+    '1. 生成你的 Steam 资料卡片。',
+    '2. 内置多种主题和多种语言配置，支持超过10项的个性化设置，并可通过 https://card.yuy1n.io/ 进行预览。',
+    '3. 支持以Vercel、Netlify、Railway或 Docker 方式进行部署。'
   ]
 };

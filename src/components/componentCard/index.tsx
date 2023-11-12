@@ -3,7 +3,7 @@ import classNames from 'classnames';
 import Image from 'next/image';
 import dynamic from 'next/dynamic';
 
-import { ICard } from '@/types/config';
+import { IComponentCard } from '@/types/config';
 import { LalezarFont } from '@/common/font';
 import { useList } from '@/context/list';
 import { ACTION_TYPE } from '@/context/list/reducer';
@@ -13,10 +13,10 @@ import styles from './index.module.scss';
 const Love = dynamic(() => import('./components/love'), { ssr: false });
 
 interface IProps {
-  data: ICard;
+  data: IComponentCard;
 }
 
-const Card: FC<IProps> = ({ data }) => {
+const ComponentCard: FC<IProps> = ({ data }) => {
   const { dispatch } = useList();
 
   const clickCard = () => {
@@ -52,4 +52,4 @@ const Card: FC<IProps> = ({ data }) => {
   );
 };
 
-export default Card;
+export default ComponentCard;

@@ -1,0 +1,77 @@
+$max-tab-height: 38px;
+$tab-height: 28px;
+
+.tab-list {
+	position: relative;
+  z-index: 2;
+	display: flex;
+  flex-direction: row-reverse;
+  align-items: flex-end;
+  height: $max-tab-height;
+  margin-top: 40px;
+  margin-left: auto;
+  background-color: #000000;
+
+	.tab-item {
+		position: relative;
+		font-size: 28px;
+		font-weight: 600;
+    line-height: $max-tab-height;
+		color: $light-color;
+		cursor: pointer;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    transition: all 0.2s;
+
+    .tabBox {
+      transform: translateY(-12px);
+    }
+
+    .firstChat {
+      position: relative;
+      top: 2px;
+      display: inline-block;
+      font-size: 40px;
+    }
+    .otherChat {
+      font-size: 24px;
+    }
+
+    &.profiles {
+      background-color: $secondary-color;
+      .otherChat {
+        margin-left: -2px;
+      }
+    }
+    &.components {
+      background-color: $primary-color;
+    }
+
+    &:not(:first-child) {
+      transform: translateX(50%);
+    }
+	}
+
+  .tab-selected {
+    z-index: 2;
+    height: $max-tab-height;
+    padding: 0 30px;
+    opacity: 1;
+
+    .firstChat {
+      top: -3px;
+      font-size: 50px;
+    }
+  }
+
+  .tab-no-selected {
+    z-index: 1;
+    height: $tab-height;
+    padding: 0 15px;
+    opacity: 0.6;
+
+    &:hover {
+      opacity: 0.9;
+    }
+  }
+}

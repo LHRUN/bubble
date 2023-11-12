@@ -1,11 +1,14 @@
-import { ICard } from '@/types/config';
+import { IComponentCard } from '@/types/config';
 import { ListState } from './reducer';
 import {
   storage,
   CATEGORY_ACTIVITY_STORAGE_KEY,
   LIKES_STORAGE_KEY,
-  LANGUAGE_KEY
+  LANGUAGE_KEY,
+  CURRENT_TAB_KEY
 } from '@/utils/storage';
+import { tabOptions } from '@/common/config';
+import { Categories } from '@/common/components';
 
 /**
  * change markdown content
@@ -27,7 +30,7 @@ export const changeActivity = (
  * show modal
  * @param data Data to be displayed in modal
  */
-export const showModal = (oldState: ListState, data: ICard) => {
+export const showModal = (oldState: ListState, data: IComponentCard) => {
   const newState = {
     ...oldState,
     visible: true,
@@ -81,5 +84,36 @@ export const changeLanguage = (oldState: ListState, language: string) => {
     language
   };
   storage.set(LANGUAGE_KEY, language);
+  return newState;
+};
+
+/**
+ * change tab
+ */
+export const changeTabs = (oldState: ListState, currentTab: string) => {
+  const newState = {
+    ...oldState,
+    currentTab
+  };
+  storage.set(CURRENT_TAB_KEY, currentTab);
+  return newState;
+};
+
+/**
+ * get localStorage data
+ */
+export const initStorage = (oldState: ListState) => {
+  const likesStorage = storage.get(LIKES_STORAGE_KEY) || [];
+  const languageStorage = storage.get(LANGUAGE_KEY) || 'en';
+  const categoryActivityStorage =
+    storage.get(CATEGORY_ACTIVITY_STORAGE_KEY) || Categories.All;
+  const currentTabStorage = storage.get(CURRENT_TAB_KEY) || tabOptions[0].title;
+  const newState = {
+    ...oldState,
+    categoryActivity: categoryActivityStorage,
+    likes: likesStorage,
+    language: languageStorage,
+    currentTab: currentTabStorage.toLowerCase()
+  };
   return newState;
 };

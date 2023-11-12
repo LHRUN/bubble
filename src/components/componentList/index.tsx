@@ -1,14 +1,14 @@
-import { Categories, CardList } from '@/common/config';
+import { Categories, ComponentCardList } from '@/common/components';
 import { useList } from '@/context/list';
-import Card from '@/components/card';
+import ComponentCard from '@/components/componentCard';
 import styles from './index.module.scss';
 import DetailModal from '../detailModal';
 import { useMemo } from 'react';
 
-const List = () => {
+const ComponentList = () => {
   const { data } = useList();
   const listData = useMemo(() => {
-    return CardList.filter((item) => {
+    return ComponentCardList.filter((item) => {
       return (
         data.categoryActivity === Categories.All ||
         item.category.includes(data.categoryActivity) ||
@@ -22,7 +22,7 @@ const List = () => {
       {listData.length ? (
         listData.map((item) => (
           <div key={item.name} className={styles.item}>
-            <Card data={item} />
+            <ComponentCard data={item} />
           </div>
         ))
       ) : (
@@ -33,4 +33,4 @@ const List = () => {
   );
 };
 
-export default List;
+export default ComponentList;
