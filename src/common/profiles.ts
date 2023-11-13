@@ -2,6 +2,139 @@ import { IProfileCard } from '@/types/config';
 
 export const ProfileCardList: IProfileCard[] = [
   {
+    name: 'Wyatt Walsh',
+    snapshootTime: '2023/11/13 22:00',
+    imageUrl:
+      'https://raw.githubusercontent.com/LHRUN/file-store/main/bubble/62.jpg',
+    githubUrl: 'https://github.com/wyattowalsh'
+  },
+  {
+    name: 'Peter Strick',
+    snapshootTime: '2023/11/13 22:00',
+    imageUrl:
+      'https://raw.githubusercontent.com/LHRUN/file-store/main/bubble/63.jpg',
+    githubUrl: 'https://github.com/PeterStrick'
+  },
+  {
+    name: 'trinib',
+    snapshootTime: '2023/11/13 22:00',
+    imageUrl:
+      'https://raw.githubusercontent.com/LHRUN/file-store/main/bubble/64.jpg',
+    githubUrl: 'https://github.com/trinib'
+  },
+  {
+    name: 'Silvanus Sterlinghart',
+    snapshootTime: '2023/11/13 22:00',
+    imageUrl:
+      'https://raw.githubusercontent.com/LHRUN/file-store/main/bubble/65.jpg',
+    githubUrl: 'https://github.com/FierceMao'
+  },
+  {
+    name: 'Mᴀɴᴀsᴇ́s Jᴇsᴜ́s',
+    snapshootTime: '2023/11/13 22:00',
+    imageUrl:
+      'https://raw.githubusercontent.com/LHRUN/file-store/main/bubble/66.jpg',
+    githubUrl: 'https://github.com/manasesjesus'
+  },
+  {
+    name: 'Anmol Baranwal',
+    snapshootTime: '2023/11/13 22:00',
+    imageUrl:
+      'https://raw.githubusercontent.com/LHRUN/file-store/main/bubble/67.jpg',
+    githubUrl: 'https://github.com/Anmol-Baranwal'
+  },
+  {
+    name: 'Stefan (^_^)',
+    snapshootTime: '2023/11/13 22:00',
+    imageUrl:
+      'https://raw.githubusercontent.com/LHRUN/file-store/main/bubble/68.jpg',
+    githubUrl: 'https://github.com/cornatul'
+  },
+  {
+    name: 'AH WEI',
+    snapshootTime: '2023/11/13 22:00',
+    imageUrl:
+      'https://raw.githubusercontent.com/LHRUN/file-store/main/bubble/69.jpg',
+    githubUrl: 'https://github.com/kwchang0831'
+  },
+  {
+    name: 'Meet Vasani',
+    snapshootTime: '2023/11/13 22:00',
+    imageUrl:
+      'https://raw.githubusercontent.com/LHRUN/file-store/main/bubble/70.jpg',
+    githubUrl: 'https://github.com/D4-80593-meetvasani'
+  },
+  {
+    name: 'Jeremy(Xinyi) Zhang',
+    snapshootTime: '2023/11/13 22:00',
+    imageUrl:
+      'https://raw.githubusercontent.com/LHRUN/file-store/main/bubble/71.jpg',
+    githubUrl: 'https://github.com/Jeremyzzzz'
+  },
+  {
+    name: 'Saif Al Siam',
+    snapshootTime: '2023/11/13 22:00',
+    imageUrl:
+      'https://raw.githubusercontent.com/LHRUN/file-store/main/bubble/72.jpg',
+    githubUrl: 'https://github.com/alsiam'
+  },
+  {
+    name: 'Mauricio Taffarel',
+    snapshootTime: '2023/11/13 22:00',
+    imageUrl:
+      'https://raw.githubusercontent.com/LHRUN/file-store/main/bubble/73.jpg',
+    githubUrl: 'https://github.com/taffarel55'
+  },
+  {
+    name: 'Mindula Dilthushan Manamperi',
+    snapshootTime: '2023/11/13 22:00',
+    imageUrl:
+      'https://raw.githubusercontent.com/LHRUN/file-store/main/bubble/74.jpg',
+    githubUrl: 'https://github.com/Mindula-Dilthushan'
+  },
+  {
+    name: 'Aman Seelay',
+    snapshootTime: '2023/11/13 22:00',
+    imageUrl:
+      'https://raw.githubusercontent.com/LHRUN/file-store/main/bubble/75.jpg',
+    githubUrl: 'https://github.com/ImSeelay'
+  },
+  {
+    name: 'Владислав Кузнецов',
+    snapshootTime: '2023/11/13 22:00',
+    imageUrl:
+      'https://raw.githubusercontent.com/LHRUN/file-store/main/bubble/76.jpg',
+    githubUrl: 'https://github.com/SmithyVL'
+  },
+  {
+    name: 'Shivam Prakash',
+    snapshootTime: '2023/11/13 22:00',
+    imageUrl:
+      'https://raw.githubusercontent.com/LHRUN/file-store/main/bubble/77.jpg',
+    githubUrl: 'https://github.com/Shivam171'
+  },
+  {
+    name: 'Szwedzik',
+    snapshootTime: '2023/11/13 22:00',
+    imageUrl:
+      'https://raw.githubusercontent.com/LHRUN/file-store/main/bubble/78.jpg',
+    githubUrl: 'https://github.com/szwedzik'
+  },
+  {
+    name: 'Samarth Saxena',
+    snapshootTime: '2023/11/13 22:00',
+    imageUrl:
+      'https://raw.githubusercontent.com/LHRUN/file-store/main/bubble/79.jpg',
+    githubUrl: 'https://github.com/SamarthSaxena10'
+  },
+  {
+    name: 'Dennis Abrams',
+    snapshootTime: '2023/11/13 22:00',
+    imageUrl:
+      'https://raw.githubusercontent.com/LHRUN/file-store/main/bubble/80.jpg',
+    githubUrl: 'https://github.com/dennisabrams'
+  },
+  {
     name: 'Alexandre Sanlim',
     snapshootTime: '2023/11/12 13:22',
     imageUrl:
