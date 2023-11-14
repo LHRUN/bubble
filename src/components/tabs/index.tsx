@@ -18,7 +18,7 @@ const Tabs = () => {
   };
 
   return (
-    <div className={styles['tab-list']}>
+    <div id="tabs" className={styles['tab-list']}>
       {tabOptions.map((item, index) => (
         <div
           key={index}

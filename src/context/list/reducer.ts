@@ -6,7 +6,8 @@ import {
   updateLikes,
   changeLanguage,
   changeTabs,
-  initStorage
+  initStorage,
+  changePage
 } from './actions';
 
 export interface ListState {
@@ -16,6 +17,7 @@ export interface ListState {
   likes: string[];
   language: string;
   currentTab: string;
+  currentPage: number;
 }
 
 export interface ListAction {
@@ -33,7 +35,8 @@ export const ACTION_TYPE = {
   HIDE_MODAL: 'hidenModal',
   UPDATE_LIKES: 'updateLikes',
   CHANGE_LANGUAGE: 'changeLanguage',
-  CHANGE_TAB: 'changeTab'
+  CHANGE_TAB: 'changeTab',
+  CHANGE_PAGE: 'changePage'
 };
 
 export const listReducer: ListReducer = (state, action) => {
@@ -52,6 +55,8 @@ export const listReducer: ListReducer = (state, action) => {
       return changeTabs(state, action.payload);
     case ACTION_TYPE.INIT_STORAGE:
       return initStorage(state);
+    case ACTION_TYPE.CHANGE_PAGE:
+      return changePage(state, action.payload);
     default:
       return state;
   }

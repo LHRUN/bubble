@@ -32,7 +32,8 @@ export const ListProvider: FC<{ children: ReactNode }> = ({ children }) => {
     currentData: null,
     likes: [],
     language: 'en',
-    currentTab: tabOptions[0].title
+    currentTab: tabOptions[0].title,
+    currentPage: 0
   });
 
   useEffect(() => {

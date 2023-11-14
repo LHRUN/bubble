@@ -5,7 +5,8 @@ import {
   CATEGORY_ACTIVITY_STORAGE_KEY,
   LIKES_STORAGE_KEY,
   LANGUAGE_KEY,
-  CURRENT_TAB_KEY
+  CURRENT_TAB_KEY,
+  CURRENT_PAGE_KEY
 } from '@/utils/storage';
 import { tabOptions } from '@/common/config';
 import { Categories } from '@/common/components';
@@ -100,6 +101,18 @@ export const changeTabs = (oldState: ListState, currentTab: string) => {
 };
 
 /**
+ * change page
+ */
+export const changePage = (oldState: ListState, currentPage: number) => {
+  const newState = {
+    ...oldState,
+    currentPage
+  };
+  storage.set(CURRENT_PAGE_KEY, currentPage);
+  return newState;
+};
+
+/**
  * get localStorage data
  */
 export const initStorage = (oldState: ListState) => {
@@ -108,12 +121,14 @@ export const initStorage = (oldState: ListState) => {
   const categoryActivityStorage =
     storage.get(CATEGORY_ACTIVITY_STORAGE_KEY) || Categories.All;
   const currentTabStorage = storage.get(CURRENT_TAB_KEY) || tabOptions[0].title;
+  const currentPageStorage = storage.get(CURRENT_PAGE_KEY) || 0;
   const newState = {
     ...oldState,
     categoryActivity: categoryActivityStorage,
     likes: likesStorage,
     language: languageStorage,
-    currentTab: currentTabStorage.toLowerCase()
+    currentTab: currentTabStorage.toLowerCase(),
+    currentPage: currentPageStorage
   };
   return newState;
 };
