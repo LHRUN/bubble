@@ -37,6 +37,18 @@ export const Categories = {
 
 export const ComponentCardList: Array<IComponentCard> = [
   {
+    name: 'Buy Me a Coffee',
+    previewImage:
+      'https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png',
+    github: 'https://www.buymeacoffee.com',
+    example: `
+    <a href="https://www.buymeacoffee.com/leo0808" target="_blank">
+      <img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png"/>
+    </a>
+    `,
+    category: [Categories.OnlyImage]
+  },
+  {
     name: 'Steam Card',
     previewImage:
       'https://card.yuy1n.io/card/76561198340841543/dark,en,badge,group',

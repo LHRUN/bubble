@@ -151,5 +151,9 @@ export const descripts: Record<string, string[]> = {
     '1. Generate Your Steam Profile Card Quickly',
     '2. Multiple themes and multiple language configurations are built in, with support for more than 10 customizations. Preview available at https://card.yuy1n.io/.',
     '3. Support deploy it with Vercel, Netlify, Railway or Docker.'
+  ],
+  'Buy Me a Coffee': [
+    '1. If you are looking for some micro-sponsorship to motivate your open source project to go further, "Buy Me a Coffee" is a great option.',
+    '2. Simply register at https://www.buymeacoffee.com and embed this image and your link to the location you wish to display it.'
   ]
 };
