@@ -142,5 +142,9 @@ export const descripts: Record<string, string[]> = {
     '1. 生成你的 Steam 资料卡片。',
     '2. 内置多种主题和多种语言配置，支持超过10项的个性化设置，并可通过 https://card.yuy1n.io/ 进行预览。',
     '3. 支持以Vercel、Netlify、Railway或 Docker 方式进行部署。'
+  ],
+  'Buy Me a Coffee': [
+    '1. 如果你希望获得一些小额赞助，以激励你的开源项目更进一步，Buy Me a Coffee 是一个不错的选择。',
+    '2. 只需在 https://www.buymeacoffee.com 注册，然后将这张图片和你的链接嵌入到你希望展示的位置即可。'
   ]
 };

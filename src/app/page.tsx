@@ -8,6 +8,7 @@ import ComponentList from '@/components/componentList';
 import TopJumper from '@/components/topJumper';
 import Tabs from '@/components/tabs';
 import ProfileList from '@/components/profileList';
+import Pagination from '@/components/pagination';
 
 import { useList } from '@/context/list';
 import { tabTitles } from '@/common/config';
@@ -29,7 +30,10 @@ const Home = () => {
               <ComponentList />
             </>
           ) : (
-            <ProfileList />
+            <>
+              <ProfileList />
+              <Pagination />
+            </>
           )}
         </div>
       </main>

@@ -18,15 +18,16 @@ const ProfileCard: FC<IProps> = ({ data }) => {
 
   useEffect(() => {
     const imageContainerHeight = imageContainerRef?.current?.offsetHeight;
-    if (
-      imageContainerHeight &&
-      imageHeight &&
-      imageHeight > imageContainerHeight
-    ) {
+    if (imageContainerHeight && imageHeight) {
       const translateY = imageHeight - imageContainerHeight;
-      setAniTranslateY(translateY);
+      setAniTranslateY(translateY >= 0 ? translateY : 0);
     }
-  }, [aniTranslateY, imageContainerRef?.current?.offsetHeight, imageHeight]);
+  }, [
+    aniTranslateY,
+    imageContainerRef?.current?.offsetHeight,
+    imageHeight,
+    data.imageUrl
+  ]);
 
   return (
     <a
