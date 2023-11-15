@@ -1,5 +1,4 @@
 .body {
-  position: relative;
   display: flex;
   min-width: 50vw;
   max-width: 70vw;
@@ -8,18 +7,8 @@
   padding: 40px 30px;
   overflow-y: auto;
   color: $light-color;
+  background-color: $secondary-color;
   border-radius: 20px;
-
-  .background {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    width: 100%;
-    height: 100%;
-    background-color: $secondary-color;
-    opacity: 0.9;
-  }
 
   .left {
     width: 50%;
@@ -46,6 +35,7 @@
         line-height: 18px;
         color: $light-color;
         text-decoration: underline;
+        word-break: break-all;
         cursor: pointer;
 
         &:hover {
@@ -61,6 +51,8 @@
       border-radius: 15px;
 
       .descItem {
+        word-break: break-all;
+
         &:not(:first-child) {
           margin-top: 10px;
         }
@@ -109,6 +101,42 @@
         aspect-ratio: 5/4;
         border-radius: 15px;
         object-fit: contain;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 900px){
+  .body {
+    flex-direction: column;
+    max-width: 90vw;
+    max-height: 80vh;
+    overflow-y: auto;
+
+    .left {
+      width: 100%;
+      height: auto;
+      padding-right: 0px;
+      overflow-y: visible;
+      border-right: none;
+
+      .github {
+        flex-direction: column;
+        
+        .githubText {
+          margin-top: 10px;
+        }
+      }
+    }
+
+    .right {
+      width: 100%;
+      height: auto;
+      padding-left: 0px;
+      overflow-y: visible;
+
+      .example {
+        margin-top: 20px;
       }
     }
   }

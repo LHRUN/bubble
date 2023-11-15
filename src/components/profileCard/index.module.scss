@@ -73,12 +73,38 @@
       transform: translateY(var(--aniTranslateY));
     }
   }
+}
 
-  &:not(:nth-child(2n)) {
-    margin-right: 2%;
+@media screen and (min-width: 700px) {
+  .card {
+    &:not(:nth-child(2n)) {
+      margin-right: 2%;
+    }
+  
+    &:not(:nth-child(-n+2)) {
+      margin-top: 20px;
+    }
   }
+}
 
-  &:not(:nth-child(-n+2)) {
-    margin-top: 20px;
+@media screen and (max-width: 699px) {
+  .card {
+    width: 100%;
+    border-radius: 20px;
+
+    .header {
+      .name {
+        font-size: 20px;
+        line-height: 24px;
+      }
+
+      .time {
+        font-size: 12px;
+        line-height: 15px;
+      }
+    }
+    &:not(:first-child) {
+      margin-top: 20px;
+    }
   }
 }

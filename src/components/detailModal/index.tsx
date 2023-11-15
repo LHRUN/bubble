@@ -22,7 +22,6 @@ const DetailModal = () => {
   return (
     <Modal visible={data.visible} changeVisible={changeVisible}>
       <div className={styles.body}>
-        <div className={styles.background}></div>
         <div className={styles.left}>
           <div className={styles.github}>
             <div className={styles.githubTitle}>Github</div>

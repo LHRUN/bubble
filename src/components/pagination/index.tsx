@@ -13,15 +13,17 @@ const list = Array.from(
 const Pagination = () => {
   const { data, dispatch } = useList();
   const clickPage = (index: number) => {
-    const tabs = document.querySelector(`#tabs`) as HTMLDivElement;
-    window.scrollTo({
-      top: tabs?.offsetTop ? tabs?.offsetTop - 30 : 0,
-      behavior: 'smooth'
-    });
-    dispatch({
-      type: ACTION_TYPE.CHANGE_PAGE,
-      payload: index
-    });
+    if (data.currentPage !== index) {
+      const tabs = document.querySelector(`#tabs`) as HTMLDivElement;
+      window.scrollTo({
+        top: tabs?.offsetTop ? tabs?.offsetTop - 30 : 0,
+        behavior: 'smooth'
+      });
+      dispatch({
+        type: ACTION_TYPE.CHANGE_PAGE,
+        payload: index
+      });
+    }
   };
 
   return (

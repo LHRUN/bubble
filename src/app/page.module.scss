@@ -1,5 +1,4 @@
 .page {
-  min-width: 780px;
   max-width: 980px;
   margin: 0 auto;
 
@@ -22,3 +21,13 @@
     background-color: $secondary-color;
   }
 }
+
+@media screen and (max-width: 700px) {
+  .page {
+    .main {
+      margin-bottom: 0px;
+      border-radius: 0px;
+    }
+  }
+}
+
