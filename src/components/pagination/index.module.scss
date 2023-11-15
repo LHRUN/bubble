@@ -1,6 +1,8 @@
 .container {
   display: flex;
   flex-wrap: wrap;
+  row-gap: 10px;
+  column-gap: 10px;
   align-items: center;
   justify-content: center;
   margin-bottom: 50px;
@@ -17,10 +19,6 @@
     border: solid 4px #183D3D;
     border-radius: 12px;
 
-    &:not(:first-child) {
-      margin-left: 10px;
-    }
-
     &:hover {
       border-color: $tertiary-color;
     }
@@ -30,3 +28,4 @@
     }
   }
 }
+

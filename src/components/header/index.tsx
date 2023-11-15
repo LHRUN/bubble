@@ -3,21 +3,29 @@ import styles from './index.module.scss';
 import classNames from 'classnames';
 import I18NSwitch from './components/i18nSwitch';
 import githubIcon from '@/assets/image/icons/gitHub.svg';
+import buyMeACoffeeIcon from '@/assets/image/icons/buyMeACoffee.svg';
 import Image from 'next/image';
 
 const Header = () => {
   return (
     <div className={classNames(styles.container, LalezarFont.className)}>
       <div className={styles.nav}>
-        <I18NSwitch />
-        <a href="https://github.com/LHRUN/bubble" target="_blank">
-          <Image
-            className={styles.navIcon}
-            src={githubIcon}
-            alt="icon"
-            width={28}
-            height={28}
-          />
+        <div className={styles.i18nSwitch}>
+          <I18NSwitch />
+        </div>
+        <a
+          className={styles.githubIcon}
+          href="https://github.com/LHRUN/bubble"
+          target="_blank"
+        >
+          <Image src={githubIcon} alt="icon" width={32} height={32} />
+        </a>
+        <a
+          className={styles.coffeeIcon}
+          href="https://www.buymeacoffee.com/leo0808"
+          target="_blank"
+        >
+          <Image src={buyMeACoffeeIcon} alt="icon" width={28} height={28} />
         </a>
       </div>
       <div className={styles.title}>

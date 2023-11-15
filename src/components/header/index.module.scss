@@ -7,12 +7,39 @@
     right: 0;
     z-index: 10;
     display: flex;
+    align-items: center;
 
-    .navIcon {
-      width: 28px;
+    .i18nSwitch {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100px;
       height: 28px;
-      margin-left: 108px;
+    }
+
+    .githubIcon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 32px;
+      height: 32px;
+      margin-left: 10px;
       cursor: pointer;
+
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+
+    .coffeeIcon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 32px;
+      height: 32px;
+      margin-left: 10px;
+      background-color: $light-color;
+      border-radius: 6px;
 
       &:hover {
         opacity: 0.8;
@@ -69,6 +96,68 @@
     background-image: linear-gradient(to right, $tertiary-color, $secondary-color, $primary-color);
     -webkit-background-clip: text;
     transform: rotate(2deg);
+  }
+}
+
+@media screen and (min-width:  700px) and (max-width: 980px) {
+  .container {
+    padding: 0 30px;
+
+    .title {
+      .titleText {
+        font-size: 100px;
+        line-height: 110px;
+      }
+
+      .subTitle {
+        .subTitleText {
+          font-size: 100px;
+          line-height: 110px;
+        }
+
+        .subTitleIcon {
+          top: 0px;
+          right: 0px;
+          font-size: 18px;
+        }
+      }
+    }
+
+    .desc {
+      font-size: 32px;
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .container {
+    padding: 0 15px;
+
+    .title {
+      padding-top: 70px;
+
+      .titleText {
+        font-size: 80px;
+        line-height: 90px;
+      }
+
+      .subTitle {
+        .subTitleText {
+          font-size: 80px;
+          line-height: 90px;
+        }
+
+        .subTitleIcon {
+          top: -5px;
+          right: 0;
+          font-size: 14px;
+        }
+      }
+    }
+
+    .desc {
+      font-size: 20px;
+    }
   }
 }
 

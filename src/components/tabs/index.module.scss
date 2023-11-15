@@ -75,3 +75,31 @@ $tab-height: 28px;
     }
   }
 }
+
+@media screen and (max-width: 700px) {
+  .tab-list {
+    .tab-item {
+      font-size: 24px;
+
+      .firstChat {
+        font-size: 30px;
+      }
+
+      .otherChat {
+        font-size: 20px;
+      }
+    }
+
+    .tab-selected {
+      z-index: 2;
+      height: $max-tab-height;
+      padding: 0 30px;
+      opacity: 1;
+  
+      .firstChat {
+        top: -3px;
+        font-size: 40px;
+      }
+    }
+  }
+}
