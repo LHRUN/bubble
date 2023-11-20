@@ -1,3 +1,10 @@
+# 1.5.0 (2023-11-20)
+
+### Feat
+
++ add @vercel/analytics
++ add microsoft clarity
+
 # 1.4.0 (2023-11-15)
 
 ### Feat
