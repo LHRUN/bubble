@@ -1,8 +1,9 @@
-import classNames from 'classnames';
-import styles from './index.module.scss';
 import { tabOptions } from '@/common/config';
 import { useList } from '@/context/list';
 import { ACTION_TYPE } from '@/context/list/reducer';
+
+import classNames from 'classnames';
+import styles from './index.module.scss';
 import { LobsterFont } from '@/common/font';
 
 const Tabs = () => {

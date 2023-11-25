@@ -22,24 +22,60 @@
   .header {
     position: relative;
     z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     padding: 0 30px;
-    .name {
-      width: 100%;
-      overflow: hidden;
-      font-size: 24px;
-      line-height: 28px;
-      color: $light-color;
-      text-overflow: ellipsis;
-      white-space: nowrap;
-    }
-    .time {
-      font-size: 15px;
-      line-height: 22px;
-      color: $tertiary-color;
 
-      .timeText {
-        display: inline-block;
-        margin-left: 5px;
+    .headerLeft {
+      max-width: 70%;
+
+      .name {
+        width: 100%;
+        overflow: hidden;
+        font-size: 24px;
+        line-height: 28px;
+        color: $light-color;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+      .time {
+        font-size: 15px;
+        line-height: 22px;
+        color: $tertiary-color;
+  
+        .timeText {
+          display: inline-block;
+          margin-left: 5px;
+        }
+      }
+    }
+    .headerRight {
+      position: relative;
+      display: flex;
+      flex-shrink: 0;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      transition: all 0.2s;
+      // transform: scale(0);
+
+      .likeImage {
+        transition: all 0.3s;
+      }
+
+      .likeNum {
+        position: absolute;
+        right: -1px;
+        bottom: -8px;
+        font-size: 18px;
+        color: $tertiary-color;
+      }
+
+      &:hover {
+        .likeImage {
+          transform: scale(1.2);
+        }
       }
     }
   }
@@ -72,13 +108,20 @@
     .image {
       transform: translateY(var(--aniTranslateY));
     }
+
+    .header {
+      .headerRight {
+        opacity: 1;
+        // transform: scale(1);
+      }
+    }
   }
 }
 
 @media screen and (min-width: 700px) {
   .card {
     &:not(:nth-child(2n)) {
-      margin-right: 2%;
+      margin-right: 20px;
     }
   
     &:not(:nth-child(-n+2)) {

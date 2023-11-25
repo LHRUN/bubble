@@ -1,0 +1,54 @@
+.card {
+  padding: 30px;
+  background-color: $primary-color;
+  border-radius: 8px;
+
+  .title {
+    margin-bottom: 20px;
+    font-size: 28px;
+    text-align: center;
+  }
+}
+
+.btn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  padding: 15px 0px;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  transition: .2s all;
+
+  &:hover,
+  &:active{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    transform: translateY(-2px);
+  }
+
+  .text {
+    margin-left: 8px;
+  }
+}
+
+.git{
+  color: white;
+  background-color: #24292e;
+}
+
+.google{
+  margin-top: 20px;
+  color: white;
+  background: #FC5C7D;
+  // background: -webkit-linear-gradient(to right, #6A82FB, #FC5C7D);
+  // background: linear-gradient(to right, #6A82FB, #FC5C7D);
+  /* stylelint-disable-next-line function-linear-gradient-no-nonstandard-direction */
+  background: -webkit-linear-gradient(to right, $secondary-color, $tertiary-color);
+  background: linear-gradient(to right, $secondary-color, $tertiary-color);
+  background-color: #fff;
+}

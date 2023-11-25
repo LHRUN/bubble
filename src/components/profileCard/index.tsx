@@ -1,20 +1,31 @@
-import Image from 'next/image';
-import classNames from 'classnames';
-import { PoppinsFont } from '@/common/font';
-import styles from './index.module.scss';
-import { IProfileCard } from '@/types/config';
 import { CSSProperties, FC, useEffect, useRef, useState } from 'react';
+import { IProfile } from '@/types/config';
+
+import Image from 'next/image';
+import Like from '@/components/like';
+
+import { PoppinsFont } from '@/common/font';
+import classNames from 'classnames';
+import styles from './index.module.scss';
 
 interface IProps {
-  data: IProfileCard;
+  data: IProfile;
+  showLike?: boolean;
 }
 
 const blurDataUrl = `data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mO0jE6pBwADRgF5f4DEIAAAAABJRU5ErkJggg==`;
 
-const ProfileCard: FC<IProps> = ({ data }) => {
+const ProfileCard: FC<IProps> = ({ data, showLike = true }) => {
   const imageContainerRef = useRef<HTMLDivElement>(null);
   const [aniTranslateY, setAniTranslateY] = useState(0);
   const [imageHeight, setImageHeight] = useState(0);
+  const [likeNum, setLikeNum] = useState(0);
+
+  useEffect(() => {
+    if (data.likes !== likeNum) {
+      setLikeNum(data.likes);
+    }
+  }, [data.likes]);
 
   useEffect(() => {
     const imageContainerHeight = imageContainerRef?.current?.offsetHeight;
@@ -29,11 +40,14 @@ const ProfileCard: FC<IProps> = ({ data }) => {
     data.imageUrl
   ]);
 
+  const jumpGithub = () => {
+    window.open(data.githubUrl, '_blank');
+  };
+
   return (
-    <a
+    <div
+      onClick={() => jumpGithub()}
       className={styles.card}
-      href={data.githubUrl}
-      target="_blank"
       style={
         {
           '--aniTranslateY': `-${aniTranslateY}px`
@@ -42,11 +56,18 @@ const ProfileCard: FC<IProps> = ({ data }) => {
     >
       <div className={styles.bg}></div>
       <div className={styles.header}>
-        <div className={styles.name}>{data.name}</div>
-        <div className={classNames(styles.time, PoppinsFont.className)}>
-          Snapshot Time:{' '}
-          <span className={styles.timeText}>{data.snapshootTime}</span>
+        <div className={styles.headerLeft}>
+          <div className={styles.name}>{data.name}</div>
+          <div className={classNames(styles.time, PoppinsFont.className)}>
+            Snapshot Time:{' '}
+            <span className={styles.timeText}>{data.snapshootTime}</span>
+          </div>
         </div>
+        {showLike ? (
+          <div className={styles.headerRight}>
+            <Like id={data.id} likeNum={data.likes} type="profile" />
+          </div>
+        ) : null}
       </div>
       <div ref={imageContainerRef} className={styles.imageContainer}>
         <Image
@@ -64,7 +85,7 @@ const ProfileCard: FC<IProps> = ({ data }) => {
           }}
         />
       </div>
-    </a>
+    </div>
   );
 };
 

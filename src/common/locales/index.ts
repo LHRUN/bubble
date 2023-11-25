@@ -1,9 +1,9 @@
-import { useList } from '@/context/list';
 import { descripts as DescriptsEn } from './en/descripts';
 import { descripts as DescriptsZh } from './zh/descripts';
+import { useConfig } from '@/context/config';
 
 export const useDescripts = () => {
-  const { data } = useList();
+  const { data } = useConfig();
   return (name: string | undefined) => {
     if (!name) {
       return [];
