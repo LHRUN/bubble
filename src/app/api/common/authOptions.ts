@@ -22,6 +22,7 @@ export const authOptions: NextAuthOptions = {
     })
   ],
   adapter: PrismaAdapter(prisma),
+  secret: process.env.SECRET,
   callbacks: {
     async session({ session, user }) {
       if (user.id && session?.user) {
