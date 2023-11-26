@@ -23,13 +23,22 @@
   float: left;
 
   .name {
+    display: flex;
+    align-items: flex-end;
     margin-right: 9px;
     font-size: 26px;
     line-height: 32px;
     color: $tertiary-color;
 
     .nickname {
+      display: inline-block;
+      max-width: 300px;
+      margin-left: 8px;
+      overflow: hidden;
       font-size: 21px;
+      line-height: 21px;
+      text-overflow: ellipsis;
+      white-space: nowrap;
     }
   }
 
@@ -108,7 +117,18 @@
     .name {
       font-size: 22px;
       .nickname {
+        max-width: 150px;
         font-size: 18px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .user {
+    .name {
+      .nickname {
+        max-width: 100px;
       }
     }
   }
