@@ -6,7 +6,31 @@
 <i>让我们开始改变你的 Profile 吧！</i>
 </h3>
 
-**中文** | [English](./README.md)
+<div align="center">
+  <a href="https://github.com/LHRUN/bubble/stargazers">
+    <img src="https://img.shields.io/github/stars/LHRUN/bubble" alt="Stars Badge"/>
+  </a>
+  <a href="https://github.com/LHRUN/bubble">
+    <img src="https://img.shields.io/github/forks/LHRUN/bubble" alt="Forks Badge"/>
+  </a>
+  <a href="https://github.com/LHRUN/bubble/blob/master/LICENSE">
+    <img src="https://img.shields.io/github/license/LHRUN/bubble" alt="License Badge"/>
+  </a>
+  <a href="https://github.com/LHRUN/bubble">
+    <img src="https://img.shields.io/badge/Made%20with-Next%20%26%20Prisma-pink" alt="Next&Prisma" />
+  </a>
+  <a href="https://github.com/LHRUN/bubble">
+    <img src="https://img.shields.io/badge/Deploy-Vercel-red" alt="deploy" />
+  </a>
+</div>
+
+**简体中文** | [English](./README.md)
+
+<div>
+  <a href="https://www.buymeacoffee.com/leo0808" target="_blank">
+    <img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png"/>
+  </a>
+</div>
 
 <h2
   style="background-image: linear-gradient(to right, #2C3333, #395B64, #A5C9CA);color: transparent;-webkit-background-clip: text;"
@@ -16,7 +40,7 @@
 
 Link: [https://bubble-awesome-profile.vercel.app/](https://bubble-awesome-profile.vercel.app/)
 
-![](https://raw.githubusercontent.com/LHRUN/file-store/main/bubble/snapshot_preview_v1.1.0.png)
+![](https://raw.githubusercontent.com/LHRUN/file-store/main/bubble/snapshot_preview_v1.6.0.png)
 
 <p>
   📜 目前，所有内容均由我手动收录，因此，如果有你觉得有趣而我没有收录的内容，欢迎提Issue。我会随时关注。
@@ -25,7 +49,18 @@ Link: [https://bubble-awesome-profile.vercel.app/](https://bubble-awesome-profil
 <h2
   style="background-image: linear-gradient(to right, #2C3333, #395B64, #A5C9CA);color: transparent;-webkit-background-clip: text;"
 >
-  Components
+  功能
+</h2>
+
++ Readme 组件收集
++ 酷炫个人页收集
++ 支持 Github 和 Google 的认证登录
++ 点赞你喜欢的内容
+
+<h2
+  style="background-image: linear-gradient(to right, #2C3333, #395B64, #A5C9CA);color: transparent;-webkit-background-clip: text;"
+>
+  组件
 </h2>
 
 + [Snk](https://github.com/Platane/snk)
@@ -63,11 +98,13 @@ Link: [https://bubble-awesome-profile.vercel.app/](https://bubble-awesome-profil
 + [Capsule Render](https://github.com/kyechan99/capsule-render)
 + [GitHub Readme YouTube Cards](https://github.com/DenverCoder1/github-readme-youtube-cards)
 + [Animated Fluent Emojis](https://animated-fluent-emoji.vercel.app/)
++ + [Steam Card](https://github.com/yuyinws/steam-card)
++ [Buy Me a Coffee](https://www.buymeacoffee.com/)
 
 <h2
   style="background-image: linear-gradient(to right, #2C3333, #395B64, #A5C9CA);color: transparent;-webkit-background-clip: text;"
 >
-  Profiles
+  个人页
 </h2>
 
 + [Amrit Anand](https://github.com/aamrits)

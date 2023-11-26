@@ -1,3 +1,13 @@
+# 1.6.0 (2023-11-26)
+
+### Feat
+
++ add feature 
+  - sign in, sign out, including github, google
+  - like your favorite content
+  - all data moved to database
++ add dependent lib, prisma, next-auth, swr
+
 # 1.5.0 (2023-11-20)
 
 ### Feat

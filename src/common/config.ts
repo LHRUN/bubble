@@ -11,3 +11,5 @@ export const tabOptions = [
     title: tabTitles.PROFILE
   }
 ];
+
+export const PROFILE_PAGE_SIZE = 20;

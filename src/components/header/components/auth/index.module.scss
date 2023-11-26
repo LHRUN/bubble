@@ -1,0 +1,136 @@
+.signIn {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  .signInText {
+    box-sizing: border-box;
+    margin-left: 1px;
+    font-size: 20px;
+    line-height: 21px;
+    color: #A5C9CA;
+    border-bottom: solid 1px #A5C9CA;
+  }
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  float: left;
+
+  .name {
+    display: flex;
+    align-items: flex-end;
+    margin-right: 9px;
+    font-size: 26px;
+    line-height: 32px;
+    color: $tertiary-color;
+
+    .nickname {
+      display: inline-block;
+      max-width: 300px;
+      margin-left: 8px;
+      overflow: hidden;
+      font-size: 21px;
+      line-height: 21px;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+  }
+
+  .avatar {
+    border-radius: 50%;
+  }
+}
+
+
+.conTooltip {
+  position: relative;
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.tooltip {
+  position: absolute;
+  top: 105%;
+  right: 6px;
+  z-index: 1;
+  width: 100%;
+  width: 180px;
+  visibility: hidden;
+  background: $primary-color;
+  border-radius: 9px;
+  opacity: .40;
+  transition: all 0.3s ease-in-out;
+  transform: translateY(9px);
+  
+  .line {
+    display: flex;
+    align-items: center;
+    height: 42px;
+    padding: 0 20px;
+    font-size: 20px;
+
+    &:not(:last-child) {
+      border-bottom: solid 1px $tertiary-color;
+    }
+
+    &:hover {
+      opacity: 0.7;
+    }
+
+    .lineTitle {
+      padding-top: 2px;
+      margin-left: 8px;
+    }
+  }
+
+  .signOut {
+    padding-left: 17px;
+
+    .lineTitle {
+      margin-left: 5px;
+    }
+  }
+}
+
+.conTooltip:hover .tooltip{
+  visibility: visible;
+  opacity: 1;
+  transition: .3s linear;
+  transform: translateY(6px);
+}
+
+.bottom:hover {
+  transform: translateY(6px);
+}
+
+@media screen and (max-width: 699px) {
+  .user {
+    .name {
+      font-size: 22px;
+      .nickname {
+        max-width: 150px;
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .user {
+    .name {
+      .nickname {
+        max-width: 100px;
+      }
+    }
+  }
+}
+

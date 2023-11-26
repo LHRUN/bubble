@@ -1,0 +1,30 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+
+  .item {
+    min-width: 75px;
+    height: 40px;
+    padding: 0px 12px;
+    margin-top: 15px;
+    margin-right: 10px;
+    font-size: 20px;
+    line-height: 38px;
+    color: $secondary-color;
+    text-align: center;
+    cursor: pointer;
+    background-color: $tertiary-color;
+    border: solid 3px $secondary-color;
+    border-radius: 20px;
+
+    &:hover {
+      border-color: $light-color;
+    }
+
+    &_activity {
+      color: $primary-color;
+      border-color: $light-color;
+    }
+  }
+}

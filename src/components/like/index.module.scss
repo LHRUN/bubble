@@ -1,0 +1,23 @@
+.box {
+  position: relative;
+  width: 30px;
+  height: 30px;
+
+  .likeImage {
+    transition: transform 0.3s;
+  }
+
+  .likeNum {
+    position: absolute;
+    right: -1px;
+    bottom: -6px;
+    font-size: 18px;
+    color: $light-color;
+  }
+
+  &:hover {
+    .likeImage {
+      transform: scale(1.2);
+    }
+  }
+}

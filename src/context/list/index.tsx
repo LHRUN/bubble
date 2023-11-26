@@ -1,5 +1,4 @@
 'use client';
-
 import {
   Dispatch,
   FC,
@@ -16,7 +15,6 @@ import {
   ListState,
   listReducer
 } from './reducer';
-import { Categories } from '@/common/components';
 import { tabOptions } from '@/common/config';
 
 const ListContext = createContext<{
@@ -27,13 +25,11 @@ ListContext.displayName = 'ListContext';
 
 export const ListProvider: FC<{ children: ReactNode }> = ({ children }) => {
   const [data, dispatch] = useReducer<ListReducer>(listReducer, {
-    categoryActivity: Categories.All,
+    categoryActivity: '',
     visible: false,
     currentData: null,
-    likes: [],
-    language: 'en',
     currentTab: tabOptions[0].title,
-    currentPage: 0
+    currentPage: 1
   });
 
   useEffect(() => {

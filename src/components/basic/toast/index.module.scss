@@ -1,0 +1,31 @@
+.container {
+  position: fixed;
+  top: 100px;
+  left: 50%;
+  z-index: 1000;
+  display: flex;
+  display: inline-block;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: -75px;
+}
+
+.toast{
+  display: flex;
+  align-items: center;
+  padding: 7px 15px;
+  font-size: 22px;
+  text-align: center;
+  background-color: $secondary-color;
+  border-radius: 6px;
+
+  &:not(:first-child) {
+    margin-top: 10px;
+  }
+
+  .toastText {
+    margin-left: 10px;
+  }
+}
+

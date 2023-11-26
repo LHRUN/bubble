@@ -1,0 +1,142 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider  = "postgresql"
+  url       = env("POSTGRES_PRISMA_URL") // uses connection pooling
+  directUrl = env("POSTGRES_URL_NON_POOLING") // uses a direct connection
+}
+
+model User {
+  id              String         @id @default(uuid())
+  name            String
+  email           String?        @unique
+  emailVerified   DateTime?      @map("email_verified")
+  image           String?
+  createdAt       DateTime       @default(now())
+  updatedAt       DateTime       @updatedAt
+  accounts        Account[]
+  sessions        Session[]
+  likedProfiles   UserLikedProfile[]
+  likedComponents UserLikedComponent[]
+
+  @@map("users")
+}
+
+model Account {
+  id                String   @id @default(cuid())
+  userId            String   @map("user_id")
+  type              String?
+  provider          String
+  providerAccountId String   @map("provider_account_id")
+  token_type        String?
+  refresh_token     String?  @db.Text
+  access_token      String?  @db.Text
+  expires_at        Int?
+  scope             String?
+  id_token          String?  @db.Text
+  createdAt         DateTime @default(now())
+  updatedAt         DateTime @updatedAt
+  user              User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([provider, providerAccountId])
+  @@map("accounts")
+}
+
+model Session {
+  id           String   @id @default(cuid())
+  userId       String?  @map("user_id")
+  sessionToken String   @unique @map("session_token") @db.Text
+  accessToken  String?  @map("access_token") @db.Text
+  expires      DateTime
+  user         User?    @relation(fields: [userId], references: [id], onDelete: Cascade)
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+
+  @@map("sessions")
+}
+
+model VerificationRequest {
+  id         String   @id @default(cuid())
+  identifier String
+  token      String   @unique
+  expires    DateTime
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
+
+  @@unique([identifier, token])
+}
+
+// Profile
+model Profile {
+  id            String   @id @default(cuid())
+  name          String
+  snapshootTime String
+  imageUrl      String
+  githubUrl     String
+  likes         Int      @default(0)
+  likedBy       UserLikedProfile[]
+
+  @@map("profiles")
+}
+
+model UserLikedProfile {
+  userId     String
+  user       User     @relation(fields: [userId], references: [id])
+
+  profileId  String
+  profile    Profile  @relation(fields: [profileId], references: [id])
+
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
+
+  @@id([userId, profileId])
+}
+
+// Component
+model Component {
+  id               String  @id @default(cuid())
+  name             String
+  github           String
+  example          String
+  likes            Int      @default(0)
+  categorys        CategoryOfComponent[]
+  likedBy          UserLikedComponent[]
+
+  @@map("components")
+}
+
+model ComponentCategory {
+  id         String @id @default(cuid())
+  name       String
+  components CategoryOfComponent[]
+
+  @@map("componentCategorys")
+}
+
+model CategoryOfComponent {
+  componentId String
+  component   Component         @relation(fields: [componentId], references: [id])
+
+  categoryId  String
+  category    ComponentCategory @relation(fields: [categoryId], references: [id])
+
+  createdAt   DateTime          @default(now())
+  updatedAt   DateTime           @updatedAt
+
+  @@id([componentId, categoryId])
+}
+
+model UserLikedComponent {
+  userId       String
+  user         User       @relation(fields: [userId], references: [id])
+
+  componentId  String
+  component    Component  @relation(fields: [componentId], references: [id])
+
+  createdAt    DateTime   @default(now())
+  updatedAt    DateTime   @updatedAt
+
+  @@id([userId, componentId])
+}

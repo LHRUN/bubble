@@ -1,10 +1,10 @@
 import classNames from 'classnames';
 import styles from './index.module.scss';
-import { useList } from '@/context/list';
-import { ACTION_TYPE } from '@/context/list/reducer';
+import { useConfig } from '@/context/config';
+import { ACTION_TYPE } from '@/context/config/reducer';
 
 const I18NSwitch = () => {
-  const { data, dispatch } = useList();
+  const { data, dispatch } = useConfig();
 
   const changeLan = () => {
     const newLanguage = data.language === 'en' ? 'zh' : 'en';

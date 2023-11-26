@@ -8,6 +8,14 @@
     z-index: 10;
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    width: 100%;
+
+    .navLeft {
+      position: relative;
+      display: flex;
+      align-items: center;
+    }
 
     .i18nSwitch {
       display: flex;
@@ -49,31 +57,31 @@
 
   .title {
     position: relative;
-    padding-top: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+
     .titleText {
-      font-size: 140px;
-      line-height: 130px;
+      position: relative;
+      font-size: 150px;
       color: transparent;
       text-align: left;
       background-image: linear-gradient(to right, $primary-color, $secondary-color, $tertiary-color);
       -webkit-background-clip: text;
     }
-  }
-
-  .subTitle {
-    position: relative;
 
     .subTitleText {
-      text-align: right;
+      font-size: 130px;
     }
 
-    .subTitleIcon {
+    .titleIcon {
       position: absolute;
-      top: 0em;
-      right: -1em;
+      top: 2.5em;
+      right: -1.3em;
       z-index: 2;
       padding: 1px 8px;
-      font-size: 24px;
+      font-size: 22px;
       color: #662549;
       cursor: pointer;
       background-color: #DE8F5F;
@@ -88,14 +96,42 @@
   }
 
   .desc {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin-top: 20px;
-    margin-left: 6px;
-    font-size: 40px;
-    color: transparent;
-    text-align: left;
-    background-image: linear-gradient(to right, $tertiary-color, $secondary-color, $primary-color);
-    -webkit-background-clip: text;
-    transform: rotate(2deg);
+
+    .descTextContainer {
+      position: relative;
+
+      .descTextContainerVal {
+        position: relative;
+        z-index: 2;
+        font-size: 34px;
+        color: transparent;
+        text-align: left;
+        -webkit-text-stroke: 0.5px $tertiary-color;
+      }
+
+      &::after  {
+        position: absolute;
+        right: -4px;
+        bottom: 11px;
+        z-index: 1;
+        width: 78%;
+        height: 14px;
+        content: "";
+        background-color: #662549;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 981px) {
+  .container {
+    .nav {
+      padding: 0 20px;
+    }
   }
 }
 
@@ -105,26 +141,31 @@
 
     .title {
       .titleText {
-        font-size: 100px;
-        line-height: 110px;
+        font-size: 130px;
       }
 
-      .subTitle {
-        .subTitleText {
-          font-size: 100px;
-          line-height: 110px;
-        }
+      .subTitleText {
+        font-size: 110px;
+      }
 
-        .subTitleIcon {
-          top: 0px;
-          right: 0px;
-          font-size: 18px;
-        }
+      .titleIcon {
+        top: 47px;
+        right: -22px;
+        font-size: 18px;
+        border-radius: 8px;
       }
     }
 
     .desc {
-      font-size: 32px;
+      .descTextContainer {
+        .descTextContainerVal {
+          font-size: 26px;
+        }
+  
+        &::after  {
+          height: 10px;
+        }
+      }
     }
   }
 }
@@ -138,25 +179,31 @@
 
       .titleText {
         font-size: 80px;
-        line-height: 90px;
       }
 
-      .subTitle {
-        .subTitleText {
-          font-size: 80px;
-          line-height: 90px;
-        }
+      .subTitleText {
+        font-size: 80px;
+      }
 
-        .subTitleIcon {
-          top: -5px;
-          right: 0;
-          font-size: 14px;
-        }
+      .titleIcon {
+        top: 27px;
+        right: -21px;
+        font-size: 13px;
+        border-radius: 6px;
       }
     }
 
     .desc {
-      font-size: 20px;
+      .descTextContainer {
+        .descTextContainerVal {
+          font-size: 20px;
+        }
+  
+        &::after  {
+          bottom: 9px;
+          height: 7px;
+        }
+      }
     }
   }
 }

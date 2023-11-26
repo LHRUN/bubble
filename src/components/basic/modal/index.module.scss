@@ -1,0 +1,29 @@
+.shadow {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0,0,0,0.8);
+
+  .content {
+    display: flex;
+    transform: scale(0);
+
+    &_show {
+      animation: show 0.5s forwards;
+    }
+  }
+}
+
+@keyframes show {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

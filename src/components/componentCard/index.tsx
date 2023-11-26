@@ -1,23 +1,33 @@
-import { FC } from 'react';
-import classNames from 'classnames';
+import { FC, useMemo } from 'react';
 import Image from 'next/image';
-import dynamic from 'next/dynamic';
+import DynamicComponent from '../preview/dynamicComponent';
+import Like from '@/components/like';
 
-import { IComponentCard } from '@/types/config';
+import { IComponent } from '@/types/config';
 import { LalezarFont } from '@/common/font';
 import { useList } from '@/context/list';
 import { ACTION_TYPE } from '@/context/list/reducer';
+import { ComponentCardList } from '@/common/components';
 
+import classNames from 'classnames';
 import styles from './index.module.scss';
 
-const Love = dynamic(() => import('./components/love'), { ssr: false });
-
 interface IProps {
-  data: IComponentCard;
+  data: IComponent;
+  showLike?: boolean;
 }
 
-const ComponentCard: FC<IProps> = ({ data }) => {
+const ComponentCard: FC<IProps> = ({ data, showLike = true }) => {
   const { dispatch } = useList();
+
+  const preview = useMemo(() => {
+    return (
+      ComponentCardList?.find((item) => item?.name === data?.name) ?? {
+        previewComponent: '',
+        previewImage: ''
+      }
+    );
+  }, [data?.name]);
 
   const clickCard = () => {
     dispatch({
@@ -25,24 +35,29 @@ const ComponentCard: FC<IProps> = ({ data }) => {
       payload: data
     });
   };
+
   return (
     <div onClick={() => clickCard()} className={styles.card}>
       <div className={styles.background}></div>
-      <Love data={data} className={styles.love} />
+      {showLike ? (
+        <div className={styles.like}>
+          <Like id={data.id} type="component" likeNum={data.likes} />
+        </div>
+      ) : null}
       <div className={styles.main}>
         <div className={styles.preview}>
-          {data?.previewComponent ? (
-            data.previewComponent()
-          ) : (
+          {preview?.previewComponent ? (
+            <DynamicComponent componentName={preview.previewComponent} />
+          ) : preview?.previewImage ? (
             <Image
               className={styles.image}
-              src={data?.previewImage ?? ''}
+              src={preview?.previewImage ?? ''}
               alt={data.name}
               loading="lazy"
               width={300}
               height={240}
             />
-          )}
+          ) : null}
         </div>
         <div className={classNames(styles.name, LalezarFont.className)}>
           {data.name}
