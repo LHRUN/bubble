@@ -72,7 +72,7 @@ const DetailModal = () => {
               <DynamicComponent componentName={preview.previewComponent} />
             ) : preview?.previewImage ? (
               <Image
-                className={styles.image}
+                className={styles.previewImage}
                 src={preview?.previewImage ?? ''}
                 alt={detail?.name ?? ''}
                 loading="lazy"

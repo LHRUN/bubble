@@ -4,7 +4,6 @@ import GithubUserSnk from '@/assets/image/preview/github-user-snk.svg';
 import Mermaid from '@/assets/image/preview/mermaid.svg';
 import StreakStats from '@/assets/image/preview/streak-stats.svg';
 import SummaryCard from '@/assets/image/preview/summary-card.svg';
-import TechStackReact from '@/assets/image/preview/techstack-react.svg';
 import TrophySvg from '@/assets/image/preview/trophy.svg';
 import TypingSvg from '@/assets/image/preview/typing.svg';
 import StackoverflowSvg from '@/assets/image/preview/stackoverflow.svg';
@@ -12,10 +11,8 @@ import LeetcodeStarts from '@/assets/image/preview/leetcodeStarts.svg';
 import GithubContributionStats from '@/assets/image/preview/github-contribution-stats.svg';
 import RepoStartHistory from '@/assets/image/preview/repo-start-history.svg';
 import MediumSvg from '@/assets/image/preview/medium.svg';
-import PagespeedSvg from '@/assets/image/preview/pagespeed.svg';
 import ActivityGraphSvg from '@/assets/image/preview/activity-graph.svg';
 import WidgetboxSvg from '@/assets/image/preview/widgetbox.svg';
-import ContribRocks from '@/assets/image/preview/contrib-rocks.svg';
 import CapsuleRender from '@/assets/image/preview/capsule-render.svg';
 
 import { IComponent } from '@/types/config';
@@ -64,7 +61,7 @@ export const ComponentCardList: Array<
   {
     name: 'Profile 3D Contrib',
     previewImage:
-      'https://raw.githubusercontent.com/yoshi389111/github-profile-3d-contrib/main/docs/demo/profile-green-animate.svg'
+      'https://raw.githubusercontent.com/LHRUN/file-store/main/bubble/components/profile3DContrib.png'
   },
   {
     name: 'Views Counter',
@@ -80,7 +77,8 @@ export const ComponentCardList: Array<
   },
   {
     name: 'Random Jokes',
-    previewImage: 'https://readme-jokes.vercel.app/api'
+    previewImage:
+      'https://raw.githubusercontent.com/LHRUN/file-store/main/bubble/components/randomJokes.png'
   },
   {
     name: 'LeetCode Readme Stats',
@@ -107,7 +105,7 @@ export const ComponentCardList: Array<
   {
     name: 'Blog Post Workflow',
     previewImage:
-      'https://user-images.githubusercontent.com/8397274/88047382-29b8b280-cb6f-11ea-9efb-2af2b10f3e0c.png'
+      'https://raw.githubusercontent.com/LHRUN/file-store/main/bubble/components/blogPostWorkflow.png'
   },
   {
     name: 'SVG Banner',
@@ -120,7 +118,8 @@ export const ComponentCardList: Array<
   },
   {
     name: 'Contributors Img',
-    previewImage: ContribRocks
+    previewImage:
+      'https://raw.githubusercontent.com/LHRUN/file-store/main/bubble/components/contributors.png'
   },
   {
     name: 'Last.fm Recently Played',
@@ -134,7 +133,8 @@ export const ComponentCardList: Array<
   },
   {
     name: 'Waka Readme Stats',
-    previewComponent: 'wakeTime'
+    previewImage:
+      'https://raw.githubusercontent.com/LHRUN/file-store/main/bubble/components/wakeReadmeStats.png'
   },
   {
     name: 'Mermaid',
@@ -142,7 +142,8 @@ export const ComponentCardList: Array<
   },
   {
     name: 'TechStack Generator',
-    previewImage: TechStackReact
+    previewImage:
+      'https://raw.githubusercontent.com/LHRUN/file-store/main/bubble/components/techStackGenreator.png'
   },
   {
     name: 'Typing',
@@ -155,7 +156,8 @@ export const ComponentCardList: Array<
   },
   {
     name: 'Page Speed Insights',
-    previewImage: PagespeedSvg
+    previewImage:
+      'https://raw.githubusercontent.com/LHRUN/file-store/main/bubble/components/pageSpeedInsights.png'
   },
   {
     name: 'Recent Activity',
@@ -174,7 +176,7 @@ export const ComponentCardList: Array<
   {
     name: 'Github Wrapped',
     previewImage:
-      'https://raw.githubusercontent.com/rzashakeri/beautify-github-profile/master/wrapped.png'
+      'https://raw.githubusercontent.com/LHRUN/file-store/main/bubble/components/githubWrapped.png'
   },
   {
     name: 'Capsule Render',
@@ -188,6 +190,6 @@ export const ComponentCardList: Array<
   {
     name: 'Animated Fluent Emojis',
     previewImage:
-      'https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Beating%20Heart.png'
+      'https://raw.githubusercontent.com/LHRUN/file-store/main/bubble/components/animatedFluentEmojis.png'
   }
 ];
