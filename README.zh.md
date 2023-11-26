@@ -28,8 +28,9 @@
 
 <div>
   <a href="https://www.buymeacoffee.com/leo0808" target="_blank">
-    <img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png"/>
+    <img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" style="width: 200px; height: 44px;" width="200" height="44"/>
   </a>
+  <a href="https://www.producthunt.com/products/bubble-e2af3bca-c7b7-44d0-86a7-c9584a37275e?utm_source=badge-follow&utm_medium=badge&utm_souce=badge-bubble&#0045;e2af3bca&#0045;c7b7&#0045;44d0&#0045;86a7&#0045;c9584a37275e" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/follow.svg?product_id=561814&theme=light" alt="Bubble - Collect&#0032;Awesome&#0032;Github&#0032;Profiles&#0032;and&#0032;Readme&#0032;Components | Product Hunt" style="width: 200px; height: 44px;" width="200" height="44" /></a>
 </div>
 
 <h2
@@ -98,7 +99,7 @@ Link: [https://bubble-awesome-profile.vercel.app/](https://bubble-awesome-profil
 + [Capsule Render](https://github.com/kyechan99/capsule-render)
 + [GitHub Readme YouTube Cards](https://github.com/DenverCoder1/github-readme-youtube-cards)
 + [Animated Fluent Emojis](https://animated-fluent-emoji.vercel.app/)
-+ + [Steam Card](https://github.com/yuyinws/steam-card)
++ [Steam Card](https://github.com/yuyinws/steam-card)
 + [Buy Me a Coffee](https://www.buymeacoffee.com/)
 
 <h2
