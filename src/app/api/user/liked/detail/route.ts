@@ -24,6 +24,9 @@ export async function GET(req: NextRequest) {
         likedComponents: {
           select: {
             component: true
+          },
+          orderBy: {
+            createdAt: 'desc'
           }
         }
       }
@@ -38,6 +41,9 @@ export async function GET(req: NextRequest) {
         likedProfiles: {
           select: {
             profile: true
+          },
+          orderBy: {
+            createdAt: 'desc'
           }
         }
       }

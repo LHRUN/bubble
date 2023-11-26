@@ -91,7 +91,7 @@ export const ComponentCardList: Array<
   {
     name: 'Readme Quotes',
     previewImage:
-      'https://quotes-github-readme.vercel.app/api?type=vertical&theme=dark'
+      'https://raw.githubusercontent.com/LHRUN/file-store/main/bubble/components/readmeQuotes.png'
   },
   {
     name: 'Todoist Stats',

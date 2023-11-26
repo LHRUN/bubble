@@ -56,7 +56,10 @@ const ProfileCard: FC<IProps> = ({ data, showLike = true }) => {
     >
       <div className={styles.bg}></div>
       <div className={styles.header}>
-        <div className={styles.headerLeft}>
+        <div
+          className={styles.headerLeft}
+          style={{ maxWidth: showLike ? '93%' : '100%' }}
+        >
           <div className={styles.name}>{data.name}</div>
           <div className={classNames(styles.time, PoppinsFont.className)}>
             Snapshot Time:{' '}
