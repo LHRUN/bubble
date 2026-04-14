@@ -61,7 +61,7 @@ const AuthBtn = () => {
         likedComponents
       }
     });
-  }, [dispatch]);
+  }, [configDispatch, dispatch]);
 
   useEffect(() => {
     if (data?.user?.userId) {

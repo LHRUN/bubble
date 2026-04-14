@@ -19,12 +19,12 @@ export const responseFail = (code: string) => {
 };
 
 export const getServerSession = async () => {
+  const headerStore = await headers();
+  const cookieStore = await cookies();
   const req = {
-    headers: Object.fromEntries(headers() as Headers),
+    headers: Object.fromEntries(headerStore as Headers),
     cookies: Object.fromEntries(
-      cookies()
-        .getAll()
-        .map((c) => [c.name, c.value])
+      cookieStore.getAll().map((c) => [c.name, c.value])
     )
   } as any;
   const res = { getHeader() {}, setCookie() {}, setHeader() {} } as any;
