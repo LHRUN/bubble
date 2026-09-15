@@ -1,3 +1,11 @@
+# 1.6.2 (2026-09-15)
+
+### Chore
+
++ bump next from 15.5.15 to 15.5.25
++ bump next-auth from 4.24.13 to 4.24.15
++ pin vulnerable transitive dependencies via pnpm overrides
+
 # 1.6.1 (2026-04-14)
 
 ### Chore
