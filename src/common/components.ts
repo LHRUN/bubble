@@ -191,5 +191,14 @@ export const ComponentCardList: Array<
     name: 'Animated Fluent Emojis',
     previewImage:
       'https://raw.githubusercontent.com/LHRUN/file-store/main/bubble/components/animatedFluentEmojis.png'
+  },
+  {
+    name: 'GitHub Contribution Globe Badge',
+    previewImage:
+      'https://raw.githubusercontent.com/turbolego/github-contrib-globe-badge/main/badge.gif'
+  },
+  {
+    name: 'Spotify GitHub Profile Badge',
+    previewImage: 'https://ipad2spotify.vercel.app/api/badge/b0fqqgncucvgw2e.svg'
   }
 ];

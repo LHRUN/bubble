@@ -94,6 +94,8 @@ Link: [https://bubble-awesome-profile.vercel.app/](https://bubble-awesome-profil
 + [Animated Fluent Emojis](https://animated-fluent-emoji.vercel.app/)
 + [Steam Card](https://github.com/yuyinws/steam-card)
 + [Buy Me a Coffee](https://www.buymeacoffee.com/)
++ [GitHub Contribution Globe Badge](https://github.com/turbolego/github-contrib-globe-badge)
++ [Spotify GitHub Profile Badge](https://github.com/turbolego/iPad2Spotify)
 
 <h2
   style="background-image: linear-gradient(to right, #2C3333, #395B64, #A5C9CA);color: transparent;-webkit-background-clip: text;"

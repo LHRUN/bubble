@@ -146,5 +146,18 @@ export const descripts: Record<string, string[]> = {
   'Buy Me a Coffee': [
     '1. 如果你希望获得一些小额赞助，以激励你的开源项目更进一步，Buy Me a Coffee 是一个不错的选择。',
     '2. 只需在 https://www.buymeacoffee.com 注册，然后将这张图片和你的链接嵌入到你希望展示的位置即可。'
+  ],
+  'GitHub Contribution Globe Badge': [
+    '1. 每日自动更新的动画徽章，通过旋转的点状地球与地理标记，可视化你所贡献仓库拥有者的地理位置分布。',
+    '2. 通过 GitHub Actions 自动生成：检索你的公开 commits，按仓库拥有者分组，通过 OpenStreetMap Nominatim 进行地理编码，每日生成 badge.gif 与 data.json（通过 GitHub Pages 提供交互式地球，基于 cobe 渲染）。',
+    '3. 使用方法：fork https://github.com/turbolego/github-contrib-globe-badge，配置用户名，启用 GitHub Actions 与 GitHub Pages，嵌入：[![My contributions badge](https://raw.githubusercontent.com/<user>/github-contrib-globe-badge/main/badge.gif)](https://<user>.github.io/github-contrib-globe-badge/)',
+    '4. 仅需 GITHUB_TOKEN（无需额外 PAT），在 ubuntu-latest 上运行；无法定位的拥有者位置会被自动忽略。'
+  ],
+  'Spotify GitHub Profile Badge': [
+    '1. 动态生成的 SVG 徽章，展示通过 iPad2Spotify 配对应用最后观测到的 Spotify 播放曲目，包含专辑封面、歌曲标题和艺术家，适合直接嵌入 GitHub 个人主页 README.md。',
+    '2. 工作流程：部署 iPad2Spotify 到 Vercel 并完成 Spotify OAuth，iPad/应用每 ~30-60 秒轮询 Spotify，将最新曲目存入 Upstash Redis，通过 /api/badge/<badge-key>.svg 获取封面并返回 SVG。',
+    '3. 使用方法：至少观测到一首曲目后，在播放器中选择 Create GitHub README Badge，获得 Markdown：[![Last played on Spotify](https://your-project.vercel.app/api/badge/abc123.svg)](https://your-project.vercel.app/)',
+    '4. 必要条件：Vercel + Upstash Redis + Spotify Developer 应用，配置 SPOTIFY_CLIENT_ID、SPOTIFY_CLIENT_SECRET、KV_REST_API_URL、KV_REST_API_TOKEN 与 OAuth 回调；徽章 key 为公开且一年后过期，不会暴露 token。',
+    '5. 项目地址：https://github.com/turbolego/iPad2Spotify（MIT 协议）。注意：Vercel Functions 负责保密 Client Secret、OAuth、token 刷新与 SVG 生成，纯静态 GitHub Pages 无法实现。'
   ]
 };

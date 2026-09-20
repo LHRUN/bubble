@@ -155,5 +155,18 @@ export const descripts: Record<string, string[]> = {
   'Buy Me a Coffee': [
     '1. If you are looking for some micro-sponsorship to motivate your open source project to go further, "Buy Me a Coffee" is a great option.',
     '2. Simply register at https://www.buymeacoffee.com and embed this image and your link to the location you wish to display it.'
+  ],
+  'GitHub Contribution Globe Badge': [
+    '1. Daily-updating animated badge that visualizes where the owners of repositories you contribute to are located, using a rotating dotted world globe with geographic markers.',
+    '2. Generated automatically via GitHub Actions: it searches public commits for your username, groups by repository owner, geocodes owner locations via OpenStreetMap Nominatim, and produces badge.gif and data.json daily (served via GitHub Pages with interactive globe powered by cobe).',
+    '3. Usage: fork https://github.com/turbolego/github-contrib-globe-badge, configure for your username, enable GitHub Actions and GitHub Pages, then embed: [![My contributions badge](https://raw.githubusercontent.com/<user>/github-contrib-globe-badge/main/badge.gif)](https://<user>.github.io/github-contrib-globe-badge/)',
+    '4. Requires only GITHUB_TOKEN (no extra PAT) and works on ubuntu-latest; owner locations missing/un-geocodable are simply omitted.'
+  ],
+  'Spotify GitHub Profile Badge': [
+    '1. Dynamically generated SVG badge showing the last Spotify track observed by the paired iPad2Spotify application, including album artwork, song title and artist, suitable for embedding directly in a GitHub profile README.md.',
+    '2. How it works: deploy your copy of iPad2Spotify to Vercel, connect to Spotify OAuth, the iPad/app polls Spotify every ~30-60s, stores the latest track in Upstash Redis, then exposes /api/badge/<badge-key>.svg which fetches artwork from Spotify and returns the finished SVG.',
+    '3. Usage: after at least one track is observed, select Create GitHub README Badge in the player to get Markdown like: [![Last played on Spotify](https://your-project.vercel.app/api/badge/abc123.svg)](https://your-project.vercel.app/)',
+    '4. Requirements: Vercel + Upstash Redis + Spotify Developer app with SPOTIFY_CLIENT_ID, SPOTIFY_CLIENT_SECRET, KV_REST_API_URL, KV_REST_API_TOKEN and OAuth redirect; badge key is public and expires after one year, no tokens are exposed.',
+    '5. Project: https://github.com/turbolego/iPad2Spotify (MIT licensed). Note: Vercel Functions keep Client Secret server-side, handle token refresh and SVG generation; GitHub Pages/static hosting alone cannot provide this.'
   ]
 };
