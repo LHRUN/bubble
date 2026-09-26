@@ -146,5 +146,13 @@ export const descripts: Record<string, string[]> = {
   'Buy Me a Coffee': [
     '1. 如果你希望获得一些小额赞助，以激励你的开源项目更进一步，Buy Me a Coffee 是一个不错的选择。',
     '2. 只需在 https://www.buymeacoffee.com 注册，然后将这张图片和你的链接嵌入到你希望展示的位置即可。'
+  ],
+  'GitHub Contribution Globe Badge': [
+    '1. 动画徽章，在旋转的点状地球上展示你所贡献仓库的拥有者所在的位置。',
+    '2. Fork https://github.com/turbolego/github-contrib-globe-badge，填上你的 GitHub 用户名，然后打开 GitHub Actions 和 GitHub Pages。每天会自动重新生成徽章。',
+    '3. 把下面这段加到个人主页 README，并把 <user> 换成你的 GitHub 用户名：',
+    `
+[![My contributions badge](https://raw.githubusercontent.com/<user>/github-contrib-globe-badge/main/badge.gif)](https://<user>.github.io/github-contrib-globe-badge/)
+    `
   ]
 };

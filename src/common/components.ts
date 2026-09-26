@@ -191,5 +191,10 @@ export const ComponentCardList: Array<
     name: 'Animated Fluent Emojis',
     previewImage:
       'https://raw.githubusercontent.com/LHRUN/file-store/main/bubble/components/animatedFluentEmojis.png'
+  },
+  {
+    name: 'GitHub Contribution Globe Badge',
+    previewImage:
+      'https://raw.githubusercontent.com/turbolego/github-contrib-globe-badge/main/badge.gif'
   }
 ];

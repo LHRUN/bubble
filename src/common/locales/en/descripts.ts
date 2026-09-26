@@ -155,5 +155,13 @@ export const descripts: Record<string, string[]> = {
   'Buy Me a Coffee': [
     '1. If you are looking for some micro-sponsorship to motivate your open source project to go further, "Buy Me a Coffee" is a great option.',
     '2. Simply register at https://www.buymeacoffee.com and embed this image and your link to the location you wish to display it.'
+  ],
+  'GitHub Contribution Globe Badge': [
+    '1. An animated badge that shows where the owners of repositories you contribute to are located, on a rotating dotted globe.',
+    '2. Fork https://github.com/turbolego/github-contrib-globe-badge, set your GitHub username, then enable GitHub Actions and GitHub Pages. A daily workflow regenerates the badge.',
+    '3. Add this to your profile README and replace <user> with your GitHub username:',
+    `
+[![My contributions badge](https://raw.githubusercontent.com/<user>/github-contrib-globe-badge/main/badge.gif)](https://<user>.github.io/github-contrib-globe-badge/)
+    `
   ]
 };
