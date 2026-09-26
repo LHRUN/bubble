@@ -196,5 +196,9 @@ export const ComponentCardList: Array<
     name: 'GitHub Contribution Globe Badge',
     previewImage:
       'https://raw.githubusercontent.com/turbolego/github-contrib-globe-badge/main/badge.gif'
+  },
+  {
+    name: 'GitFut Card',
+    previewImage: 'https://gitfut.com/torvalds.png'
   }
 ];

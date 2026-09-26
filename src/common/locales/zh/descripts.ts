@@ -154,5 +154,12 @@ export const descripts: Record<string, string[]> = {
     `
 [![My contributions badge](https://raw.githubusercontent.com/<user>/github-contrib-globe-badge/main/badge.gif)](https://<user>.github.io/github-contrib-globe-badge/)
     `
+  ],
+  'GitFut Card': [
+    '1. 将 GitHub 活动转换为 FIFA 风格的球员卡，并根据贡献、提交、星标、Pull Request、关注者、评审、Issue 和语言多样性生成六项属性。',
+    '2. 将下面的实时卡片嵌入个人主页 README，并将 <username> 替换为你的 GitHub 用户名。GitHub 数据变化时，卡片会自动重新评估：',
+    `
+[![My GitFut card](https://gitfut.com/<username>.png)](https://gitfut.com/<username>)
+    `
   ]
 };
