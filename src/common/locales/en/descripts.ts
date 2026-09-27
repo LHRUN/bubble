@@ -163,5 +163,12 @@ export const descripts: Record<string, string[]> = {
     `
 [![My contributions badge](https://raw.githubusercontent.com/<user>/github-contrib-globe-badge/main/badge.gif)](https://<user>.github.io/github-contrib-globe-badge/)
     `
+  ],
+  'GitFut Card': [
+    '1. Turns GitHub activity into a FIFA-style player card with six stats based on contributions, commits, stars, pull requests, followers, reviews, issues, and language diversity.',
+    '2. Add this to your profile README and replace <user> with your GitHub username. The card updates as your GitHub stats change:',
+    `
+[![My GitFut card](https://gitfut.com/<user>.png)](https://gitfut.com/<user>)
+    `
   ]
 };
