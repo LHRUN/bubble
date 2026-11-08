@@ -170,5 +170,12 @@ export const descripts: Record<string, string[]> = {
     `
 [![My GitFut card](https://gitfut.com/<user>.png)](https://gitfut.com/<user>)
     `
+  ],
+  'Git koi': [
+    '1. Draws a pixel-art koi from the public activity of a GitHub account. Its languages color it, its contributions grow it, its streaks mark it, and the day that just ended decides how it swims.',
+    '2. Add this to your profile README and replace <user> with your GitHub username. The koi redraws as your GitHub stats change:',
+    `
+[![My Git koi](https://raw.githubusercontent.com/<user>/<user>/main/koi/koi.gif)](https://github.com/yalongwastaken/git-koi)
+    `
   ]
 };

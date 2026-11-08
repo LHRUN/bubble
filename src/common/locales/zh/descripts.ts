@@ -161,5 +161,12 @@ export const descripts: Record<string, string[]> = {
     `
 [![My GitFut card](https://gitfut.com/<user>.png)](https://gitfut.com/<user>)
     `
+  ],
+  'Git koi': [
+    '1. 根据 GitHub 账号的公开活动画一条像素风锦鲤：语言决定颜色，贡献量决定体型，连续天数留下标记，刚结束的那一天决定它的游姿。',
+    '2. 把下面这段加到个人主页 README，并把 <user> 换成你的 GitHub 用户名。GitHub 活动变化后，锦鲤会跟着重绘：',
+    `
+[![My Git koi](https://raw.githubusercontent.com/<user>/<user>/main/koi/koi.gif)](https://github.com/yalongwastaken/git-koi)
+    `
   ]
 };
