@@ -200,5 +200,10 @@ export const ComponentCardList: Array<
   {
     name: 'GitFut Card',
     previewImage: 'https://gitfut.com/torvalds.png'
+  },
+  {
+    name: 'Git koi',
+    previewImage:
+      'https://raw.githubusercontent.com/yalongwastaken/yalongwastaken/main/koi/koi.gif'
   }
 ];
