@@ -251,3 +251,4 @@ Link: [https://bubble-awesome-profile.vercel.app/](https://bubble-awesome-profil
 + [Thomas Guibert](https://github.com/thmsgbrt)
 + [Gaëtan Bloch](https://github.com/gaetanBloch)
 + [三咲智子 Kevin Deng](https://github.com/sxzz)
++ [十方空烬 · Ember ☄️](https://github.com/widechaos)
